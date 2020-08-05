@@ -1,34 +1,32 @@
 .button 
     position: relative
     display: inline-block
-    padding: 15px 35px
-    border: 0
-    border-radius: 22px
+    padding: 16px 20px
+    min-width: 300px
+    border: 1px solid $color-blue
+    border-radius: 4px
     font-size: 16px
-    font-weight: 700
+    font-weight: 500
     line-height: 1
-    color: $color-white
+    color: $color-blue
+    letter-spacing: 0.03em
     text-transform: uppercase
     text-align: center
     text-decoration: none
-    background-image: linear-gradient( 0deg, rgb(133,67,153) 0%, rgb(155,68,153) 48%, rgb(177,69,153) 100%)
-    box-shadow: 0px 0px 35px $color-primary
     transition: $transition
     cursor: pointer
+    min-height: 50px
 
     @media (max-width: $tablet) 
         font-size: 14px
         font-weight: 400
-    
-
 
     @media (max-width: $sm) 
         width: 100%
-    
-
 
     &:hover, &:focus 
-        background-image: linear-gradient( 0deg, rgb(177,69,153) 0%, rgb(155,68,153) 48%, rgb(133,67,153) 100%)
+        background-color: $color-blue
+        color: $color-white
     
 
     &[disabled] 
@@ -36,9 +34,35 @@
         opacity: 0.5
     
 
-    &--block 
-        display: block
-        width: 100%
-    
+    &_blue
+        background-color: $color-blue
+        color: $color-white
+
+        &:hover, &:focus
+            background-color: $color-white
+            color: $color-blue
+    &_red
+        background-color: $color-red
+        color: $color-white
+        border-color: $color-red
+
+        &:hover, &:focus
+            background-color: $color-white
+            color: $color-red
+    &_icon
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        padding: 13px 20px 12px 20px
+
+        &:before
+            content: ''
+            width: 25px
+            height: 25px
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+
+
 
 
