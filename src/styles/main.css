@@ -5190,17 +5190,39 @@ textarea {
     border-radius: 100%; }
 
 .icon-menu {
+  display: block;
   width: 50px;
   height: 50px;
   border-radius: 4px;
   background-color: #215294;
   transition: 0.2s ease-in-out; }
   .icon-menu__svg {
-    fill: #ffffff; }
+    fill: #ffffff;
+    transition: 0.2s ease-in-out; }
   .icon-menu:hover, .icon-menu:focus {
     background-color: #ffffff; }
     .icon-menu:hover .icon-menu__svg, .icon-menu:focus .icon-menu__svg {
       fill: #1C1C1C; }
+
+.icon-social {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  transition: 0.2s ease-in-out; }
+  .icon-social:hover, .icon-social:focus {
+    background-color: #ffffff; }
+  .icon-social__svg {
+    fill: #ffffff;
+    transition: 0.2s ease-in-out; }
+  .icon-social_vk:hover .icon-social__svg, .icon-social_vk:focus .icon-social__svg {
+    fill: #1A4885; }
+  .icon-social_fb:hover .icon-social__svg, .icon-social_fb:focus .icon-social__svg {
+    fill: #1A4885; }
+  .icon-social_ytb:hover .icon-social__svg, .icon-social_ytb:focus .icon-social__svg {
+    fill: #EA523A; }
 
 .container-fluid {
   width: 100%;
