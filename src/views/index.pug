@@ -1,0 +1,76 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "GT-Site"
+
+block content
+	include ../blocks/header/header
+
+	h1 Заголовок h1
+		h2 Заголовок h2
+		h3 Заголовок h3
+
+
+		h2 Кнопки
+		div(width="300")
+			a.button.button_long.button_blue(href='javascript:void(0);') Узнать подробнее
+			p
+			a.button.button_long.button_red.button_icon(href='javascript:void(0);')
+				.button__content
+					svg.button__svg
+						use(xlink:href="../img/icons/sprite.svg#ico_tel")
+					span.button__text Получить консультацию
+			p
+			a.button.button_long(href='javascript:void(0);') Смотреть в каталоге (12)
+			p
+			a.button.button_long.button_red.button_icon(href='javascript:void(0);')
+				.button__content
+					svg.button__svg
+						use(xlink:href="../img/icons/sprite.svg#ico_cart")
+					span.button__text В корзину
+			p
+			a.button.button_red.button_icon-sm(href='javascript:void(0);')
+				svg.button__svg
+					use(xlink:href="../img/icons/sprite.svg#ico_cart")
+
+
+		h2 Иконки
+		.icon.icon_search
+			svg.icon__svg
+				use(xlink:href="../img/icons/sprite.svg#ico_search")
+		p
+		.icon.icon_blank
+			svg.icon__svg
+				use(xlink:href="../img/icons/sprite.svg#ico_blank")
+		p
+		.icon.icon_person
+			svg.icon__svg
+				use(xlink:href="../img/icons/sprite.svg#ico_person")
+		p
+		.icon.icon_list
+			svg.icon__svg
+				use(xlink:href="../img/icons/sprite.svg#ico_list")
+		p
+		.icon.icon_cart
+			svg.icon__svg
+				use(xlink:href="../img/icons/sprite.svg#ico_cart-empty")
+			span.icon__amount
+		p
+			.icon.icon_location
+				svg.icon__svg
+					use(xlink:href="../img/icons/sprite.svg#ico_location")
+				span.icon__amount
+		p
+		.icon.icon_active.icon_cart
+			svg.icon__svg
+				use(xlink:href="../img/icons/sprite.svg#ico_cart-empty")
+			span.icon__amount 12
+		p
+		a.icon-menu(href='javascript:void(0);')
+			svg.icon-menu__svg
+				use(xlink:href="../img/icons/sprite.svg#ico_menu")
+
+
+block scripts
+	script(src="../js/index.js")

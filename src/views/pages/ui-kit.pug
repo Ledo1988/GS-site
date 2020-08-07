@@ -1,0 +1,44 @@
+extends ../layouts/default
+
+block variables
+	- const title = "UI kit";
+
+block content
+	h1 Заголовок h1
+	h2 Заголовок h2
+	h3 Заголовок h3
+
+
+	h2 Кнопки
+
+	.button.button_long Узнать подробнее
+	br
+	.button.button_long.button_red.button_icon
+		svg.button__svg
+			use(xlink:href="../img/icons/sprite.svg#ico_tel")
+		span.button__text Получить консультацию
+	br
+	.button.button_long.button_red.button_icon.button_icon-tel Смотреть в каталоге
+	br
+	.button.button_long.button_blue fjghfjgfjgxxcxc
+	br
+	.button.button_long.button_red.button_icon
+		svg.button__svg
+			use(xlink:href="../img/icons/sprite.svg#ico_cart")
+		span.button__text Корзина
+	br
+	.button.button_red.button_icon-sm
+		svg.button__svg
+			use(xlink:href="../img/icons/sprite.svg#ico_cart")
+
+
+	h2 Иконки
+	.icon
+		svg.icon__svg
+			use(xlink:href="../img/icons/sprite.svg#ico_search")
+
+
+
+block scripts
+	script(src="../js/pageB.js")
+	script(src="../js/vendor.js")

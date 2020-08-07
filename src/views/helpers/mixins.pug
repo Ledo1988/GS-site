@@ -1,0 +1,7 @@
+mixin list-item-img(className, src, width, height, alt, text)
+	li(class=className)
+		div(class=className + '--wrapper')
+			div(class=className + '-img')
+				img(src=src width=width height=height alt=alt)
+			div(class=className + '-desc')
+				p!= text
