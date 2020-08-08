@@ -1,0 +1,21 @@
+@import "__input/input-view__input"
+@import "__label/input-view__label"
+@import "__svg/input-view__svg"
+@import "_wrapper/input-view_wrapper"
+
+.input-view
+	
+	&:first-of-type
+		.input-view__label::after
+			content: ''
+			position: absolute
+			top: 0
+			right: -1px
+			height: 100%
+			width: 1px
+			background-color: $color-mercury
+			
+	&:hover, &:focus
+		
+		.input-view__svg
+			fill: $color-black
