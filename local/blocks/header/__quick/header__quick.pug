@@ -1,0 +1,13 @@
+.header__quick
+    include ../../logo/logo
+
+    .header__quick-contacts
+        - var quickHref = "tel:8 (495) 128-47-56";
+        - var quickHrefTitle = "8 (495) 128-47-56";
+        - var quickHrefDesc = "Пн - Пт 9:00 - 19:00"
+        include ../../contacts-quick/contacts-quick
+
+        - var quickHref = "mailto:sales@galtsystems.com";
+        - var quickHrefTitle = "sales@galtsystems.com";
+        - var quickHrefDesc = "Единая почта"
+        include ../../contacts-quick/contacts-quick

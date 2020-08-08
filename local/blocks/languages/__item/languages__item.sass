@@ -1,0 +1,18 @@
+.languages__item
+	
+	&:first-of-type
+		position: relative
+		display: flex
+		align-items: center
+		
+		&::after
+			content: ''
+			position: relative
+			width: 1px
+			height: 20px
+			background-color: $color-dustyGray
+			
+	&_active
+	
+		.languages__link
+			color: $color-green
