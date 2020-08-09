@@ -1,0 +1,16 @@
+.input-view__item
+	
+	&:first-of-type
+		.input-view__label::after
+			content: ''
+			position: absolute
+			top: 0
+			right: -1px
+			height: 100%
+			width: 1px
+			background-color: $color-mercury
+	
+	&:hover, &:focus
+		
+		.input-view__svg
+			fill: $color-black

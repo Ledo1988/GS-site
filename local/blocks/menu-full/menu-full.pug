@@ -1,0 +1,83 @@
+.menu-full
+    .menu-full__content
+        .menu-full__header
+            a.menu-full__action-link.menu-full__action-link_close(href="#")
+                .icon.icon_fill
+                    svg.icon__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
+            include ../../blocks/logo/logo
+        .menu-full__main
+            a.menu-full__action-link.menu-full__action-link_return(href="#")
+                .icon.icon_fill
+                    svg.icon__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_arrow-left")
+            .menu-full__main-item
+                ul.menu-full__list
+                    li.menu-full__item.menu-full__item_strong.menu-full__item_extra
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Каталог
+                    li.menu-full__item.menu-full__item_strong.menu-full__item_extra
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Конфигуратор
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Блог
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc О компании
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Акции
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Контакты
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Оплата
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Гарантии
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Доставка
+                ul.menu-quick.menu-full__menu-quick
+                    li.menu-quick__item
+                        a.menu-quick__link(href="#")
+                            .icon.icon_fill.menu-quick__icon
+                                svg.icon__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_person")
+                            span.menu-quick__title Кабинет
+                    li.menu-quick__item
+                        a.menu-quick__link(href="#")
+                            .icon.icon_fill.menu-quick__icon
+                                svg.icon__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_list")
+                            span.menu-quick__title Сравнение
+                    li.menu-quick__item
+                        a.menu-quick__link(href="#")
+                            .icon.icon_stroke.menu-quick__icon
+                                svg.icon__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_cart-empty")
+                            span.menu-quick__title Корзина
+                .menu-full__quick-contacts
+                    - var quickHref = "tel:8 (495) 128-47-56";
+                    - var quickHrefTitle = "8 (495) 128-47-56";
+                    - var quickHrefDesc = "Пн - Пт 9:00 - 19:00"
+                    include ../../blocks/contacts-quick/contacts-quick
+
+                    - var quickHref = "mailto:sales@galtsystems.com";
+                    - var quickHrefTitle = "sales@galtsystems.com";
+                    - var quickHrefDesc = "Единая почта"
+                    include ../../blocks/contacts-quick/contacts-quick
+                a.button.button_long.button_blue.menu-full__btn(href='javascript:void(0);') Получить предложение
+            .menu-full__main-item
+                ul.menu-full__list
+                    li.menu-full__item.menu-full__item_extra
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Сервер б/у
+                    li.menu-full__item.menu-full__item_extra
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Серверы
+                    li.menu-full__item
+                        a.menu-full__link(href="#")
+                            span.menu-full__link-desc Конфигуратор серверов
