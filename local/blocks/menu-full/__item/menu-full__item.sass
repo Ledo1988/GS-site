@@ -2,7 +2,7 @@
 @import "_extra/menu-full__item_extra"
 
 .menu-full__item
-	margin-bottom: $grid-unit*2
+	margin-bottom: $grid-unit*3
 	
 	&:last-of-type
 		margin-bottom: 0
@@ -10,8 +10,10 @@
 		.menu-full__link
 			padding-bottom: 0
 		
-	&.menu-full__item_strong:hover
-		border-bottom: 1px solid $color-athensGray
+	&_strong
+		> .menu-full__link:hover::before
+			background-color: $color-athensGray
 		
-	&.menu-full__item_active
-		border-bottom: 1px solid $color-athensGray
+	&_active
+		> .menu-full__link::before
+			background-color: $color-athensGray
