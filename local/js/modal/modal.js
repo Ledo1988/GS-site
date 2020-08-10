@@ -20,7 +20,9 @@ function modalTriggerCheck(trigger) {
 
 function bodyPageCheck(event) {
 
-    if (bodyPage.classList.contains(bodyOverflowClass) &&
+    if (event.target.closest('.modal__open-link')) {
+        return false;
+    } else if (bodyPage.classList.contains(bodyOverflowClass) &&
         (event.target.closest('.' + modalCloseClass) || !event.target.closest('.' + modalContentClass))) {
 
         popupModal.classList.remove(modalActiveClass);
@@ -29,7 +31,7 @@ function bodyPageCheck(event) {
 }
 
 modalTriggers.forEach(trigger => {
-    trigger.addEventListener('mouseover', () => { modalTriggerCheck(trigger) }) });
+    trigger.addEventListener('click', () => { modalTriggerCheck(trigger) }) });
 
 modalCloseTrigger.forEach(trigger => {
    trigger.addEventListener('click', (event) => { bodyPageCheck(event) }) });
