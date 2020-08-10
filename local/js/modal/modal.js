@@ -5,7 +5,7 @@ const modalCloseTrigger = document.querySelectorAll(".modal__close-link");
 let modalActiveClass = "modal_open";
 let modalContentClass = "modal__content";
 let modalCloseClass = "modal__close-link";
-let bodyOverflowClass = "overflow-hidden";
+let bodyOverflowClass = "modal-is-opened";
 let popupModal;
 
 function modalTriggerCheck(trigger) {
