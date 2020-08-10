@@ -1,0 +1,11 @@
+@import "../overflow-hidden/overflow-hidden"
+
+.modal
+	opacity: 0
+	visibility: hidden
+	transform: scale(1.1)
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s
+	z-index: -1
+	pointer-events: none
+	
+@import "_open/modal_open"
