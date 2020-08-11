@@ -1,14 +1,28 @@
 .configurator-result.configurator__configurator-result
     .configurator-result__title Найдено 15 товаров
     .configurator-result__filter
-        .configurator-result__sort.drop-down
-            .drop-down__title Сортировать
-            .drop-down__result.pointerCursor По убыванию цены
-                span.drop-down__result-icon
-            .drop-down__list.drop-down__list_hide.pointerCursor
-                .drop-down__option(data-sort="lowerRate") По убыванию цены
-                .drop-down__option(data-sort="higherRate") По возрастанию цены
-                .drop-down__option(data-sort="popular") По популярности
-                .drop-down__option(data-sort="rating") По рейтингу
-        .configurator-result__currency
-        .configurator-result__view
+        .configurator-result__drop-down.drop-down
+            .drop-down__title Сортировать:
+            .drop-down__choice
+                .drop-down__result По убыванию цены
+                    span.drop-down__result-icon
+                .drop-down__list.drop-down__list_hide
+                    .drop-down__option(data-sort="lowerRate") По убыванию цены
+                    .drop-down__option(data-sort="higherRate") По возрастанию цены
+                    .drop-down__option(data-sort="popular") По популярности
+                    .drop-down__option(data-sort="rating") По рейтингу
+        .configurator-result__sort
+            .configurator-result__currency
+                .input-view
+                    .input-view__item
+                        input.input-view__input(type="radio" id="inputRateRub" name="inputRate" value="rubles" checked="checked")
+                        label.input-view__label(for="inputRateRub")
+                            svg.input-view__svg
+                                use(xlink:href="/local/img/icons/sprite.svg#ico_currency-rub")
+                    .input-view__item
+                        input.input-view__input(type="radio" id="inputRateDol" name="inputRate" value="dollars")
+                        label.input-view__label(for="inputRateDol")
+                            svg.input-view__svg
+                                use(xlink:href="/local/img/icons/sprite.svg#ico_currency-dol")
+            .configurator-result__view
+                include ../input-view/input-view

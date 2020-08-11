@@ -17,18 +17,6 @@ function toggleDropDownClass(elem,className){
     return elem;
 }
 
-function toggleDropDownDisplay(elem){
-    const curDisplayStyle = elem.style.display;
-
-    if (curDisplayStyle === 'none' || curDisplayStyle === ''){
-        elem.style.display = 'block';
-    }
-    else{
-        elem.style.display = 'none';
-    }
-}
-
-
 function toggleDropDownMenuDisplay(e){
     const dropdown = e.currentTarget.parentNode;
     const menu = dropdown.querySelector('.drop-down__list');
@@ -41,7 +29,6 @@ function toggleDropDownMenuDisplay(e){
 function handleDropDownOptionSelected(e){
     toggleDropDownClass(e.target.parentNode, 'drop-down__list_hide');
 
-    const id = e.target.id;
     const newValue = e.target.textContent + ' ';
     const titleElem = document.querySelector('.drop-down__result');
     const icon = document.querySelector('.drop-down__result-icon');
