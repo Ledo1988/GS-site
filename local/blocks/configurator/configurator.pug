@@ -1,3 +1,120 @@
 .configurator
-    include ../../blocks/producer-list/producer-list
-    include ../../blocks/configurator-result/configurator-result
+    .configurator__main
+        include ../../blocks/producer-list/producer-list
+        include ../../blocks/configurator-result/configurator-result
+    include ../../blocks/promo/promo
+    .configurator__items
+    .configurator__filter
+        form.configurator__form(name="configurator-filter")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterRate")
+                label.intput-filter__label(for="inputFilterRate")
+                    span.intput-filter__title Цена
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterConfig")
+                label.intput-filter__label(for="inputFilterConfig")
+                    span.intput-filter__title Конфигурация
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterCondition")
+                label.intput-filter__label(for="inputFilterCondition")
+                    span.intput-filter__title Состояние
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterProducer")
+                label.intput-filter__label(for="inputFilterProducer")
+                    span.intput-filter__title Производитель
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterHeight")
+                label.intput-filter__label(for="inputFilterHeight")
+                    span.intput-filter__title Высота в юнитах
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterDisk")
+                label.intput-filter__label(for="inputFilterDisk")
+                    span.intput-filter__title Кол-во жёстких дисков
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterSocket")
+                label.intput-filter__label(for="inputFilterSocket")
+                    span.intput-filter__title Socket
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterProc")
+                label.intput-filter__label(for="inputFilterProc")
+                    span.intput-filter__title Семейство процессоров
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterProcDev")
+                label.intput-filter__label(for="inputFilterProcDev")
+                    span.intput-filter__title Производитель процессора
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterSlots")
+                label.intput-filter__label(for="inputFilterSlots")
+                    span.intput-filter__title Количество слотов памяти
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterMemory")
+                label.intput-filter__label(for="inputFilterMemory")
+                    span.intput-filter__title Объём памяти
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterType")
+                label.intput-filter__label(for="inputFilterType")
+                    span.intput-filter__title Тип сетевых портов
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterBox")
+                label.intput-filter__label(for="inputFilterBox")
+                    span.intput-filter__title Тип корпуса
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterBlocks")
+                label.intput-filter__label(for="inputFilterBlocks")
+                    span.intput-filter__title Количество блоков питания
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterPower")
+                label.intput-filter__label(for="inputFilterPower")
+                    span.intput-filter__title Мощность блоков питания
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .intput-filter
+                input.intput-filter__input(type="checkbox" id="inputFilterRaid")
+                label.intput-filter__label(for="inputFilterRaid")
+                    span.intput-filter__title RAID контроллер
+                    span.intput-filter__checkmark
+                        svg.intput-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
