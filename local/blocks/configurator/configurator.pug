@@ -9,6 +9,33 @@
                 include ../hot-options/hot-options
                 a.configurator__item-link(href="#" title="заголовок H1")
                     img.configurator__item-img(src="/local/img/img_configurator-1.png")
+                .configurator__item-main
+                    a.configurator__item-link(href="#" title="заголовок H1")
+                        .configurator__item-title Hewlett-Packard HP BL460cG8
+                    ul.configurator__item-options
+                        li.configurator__item-option
+                            span.configurator__item-option-title Socket:
+                            |  LGA2011
+                        li.configurator__item-option
+                            span.configurator__item-option-title RAM:
+                            |  16 x DDR4
+                        li.configurator__item-option
+                            span.configurator__item-option-title CPU:
+                            |  2 x Intel Xeon e5-24xx v1/v2
+                        li.configurator__item-option
+                            span.configurator__item-option-title HDD:
+                            |  Сервер HP DL380P GEN8
+                .configurator__item-offer
+                    .configurator__item-rate.configurator__item-rate_new 146 100 000 ₽
+                        span.configurator__item-rate-old 156 100 000 ₽
+                    .configurator__item-delivery
+                        span.configurator__item-delivery-icon.fas.fa-truck
+                        | 2 дня, бесплатно
+                    .configurator__item-buy
+                        a.button.button_red.button_icon-sm(href='javascript:void(0);' title="заголовок H1")
+                            svg.button__svg
+                                use(xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1")
+                        a.button.button_long.button_blue.configurator__item-buy-btn(href='javascript:void(0);') Конфигурировать
     .configurator__filter
         form.configurator__form(name="configurator-filter")
             .intput-filter
