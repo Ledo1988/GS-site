@@ -1,11 +1,13 @@
 const bodyPage = document.querySelector('.page');
+const overlayBlock = document.querySelector('.modal-overlay');
 const modalTriggers = document.querySelectorAll(".modal__open-link");
 const modalCloseTrigger = document.querySelectorAll(".modal__close-link");
 
-let modalActiveClass = "modal_open";
+let modalActiveClass = "modal_hidden";
 let modalContentClass = "modal__content";
 let modalCloseClass = "modal__close-link";
 let bodyOverflowClass = "modal-is-opened";
+let modalOverflowClass = "modal-overlay_visible";
 let popupModal;
 
 function modalTriggerCheck(trigger) {
@@ -14,6 +16,7 @@ function modalTriggerCheck(trigger) {
     popupModal = document.querySelector(`[data-popup-modal="${popupTrigger}"]`);
     popupModal.classList.toggle(modalActiveClass);
     bodyPage.classList.toggle(bodyOverflowClass);
+    overlayBlock.classList.toggle(modalOverflowClass);
 
     return popupModal;
 }
@@ -25,8 +28,10 @@ function bodyPageCheck(event) {
     } else if (bodyPage.classList.contains(bodyOverflowClass) &&
         (event.target.closest('.' + modalCloseClass) || !event.target.closest('.' + modalContentClass))) {
 
-        popupModal.classList.remove(modalActiveClass);
-        bodyPage.classList.remove(bodyOverflowClass);
+        popupModal.classList.toggle(modalActiveClass);
+        bodyPage.classList.toggle(bodyOverflowClass);
+        overlayBlock.classList.toggle(modalOverflowClass);
+        menuFullCloseAction();
     }
 }
 

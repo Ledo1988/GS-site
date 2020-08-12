@@ -1,5 +1,5 @@
-var elem = document.querySelector('.catalog');
-var msnry = new Masonry( elem, {
+let elem = document.querySelector('.catalog');
+let msnry = new Masonry( elem, {
     // options
     itemSelector: '.catalog__item',
     columnWidth: '.catalog__item',

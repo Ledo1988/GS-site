@@ -18,11 +18,17 @@
 @import "../modal/modal"
 
 .menu-full
-	position: fixed
-	top: 0
-	left: 0
-	width: 100vw
-	height: 100vh
-	background: rgba(0, 0, 0, 0.3)
-	z-index: 2
+	background-color: $color-white
+	padding: 60px 0px 60px 185px
+	
+	.menu-full__action-link_return
+		opacity: 0
+		pointer-events: none
+		transition: $transition
+		
+	&.modal_overflow-visible
+		.menu-full__action-link_return
+			opacity: 1
+			pointer-events: auto
+		
 	

@@ -1,4 +1,4 @@
-.menu-full.modal(data-popup-modal="menu-full")
+.menu-full(data-popup-modal="menu-full").modal.modal_hidden
     .menu-full__content.modal__content
         .menu-full__header
             a.menu-full__action-link.menu-full__action-link_close.modal__close-link(href="#" title = "заголовок H1")
@@ -7,7 +7,7 @@
                         use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
             include ../../blocks/logo/logo
         .menu-full__main
-            a.menu-full__action-link.menu-full__action-link_return.modal__close-link(href="#" title = "заголовок H1")
+            a.menu-full__action-link.menu-full__action-link_return(href="#" title = "заголовок H1")
                 .icon.icon_fill
                     svg.icon__svg
                         use(xlink:href="/local/img/icons/sprite.svg#ico_arrow-left")
@@ -16,6 +16,83 @@
                     li.menu-full__item.menu-full__item_strong.menu-full__item_extra
                         a.menu-full__link(href="/catalog.html" title = "заголовок H1")
                             span.menu-full__link-desc Каталог
+                        .menu-full__list-extra
+                            ul.menu-full__list.menu-full__list_extra
+                                li.menu-full__item.menu-full__item_extra
+                                    a.menu-full__link(href="#" title = "заголовок H1")
+                                        span.menu-full__link-desc Сервер б/у
+                                    .menu-full__list-extra
+                                        ul.menu-full__list.menu-full__list_extra.menu-full__list_tag
+                                            li.menu-full__item
+                                                a.menu-full__link(href="#" title = "заголовок H1")
+                                                    span.menu-full__link-desc Серверы Supermicro б/у
+                                                ul.tag-list.menu-full__tag-list
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 1U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 2U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 3U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 4U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") TOWER
+                                            li.menu-full__item
+                                                a.menu-full__link(href="#" title = "заголовок H1")
+                                                    span.menu-full__link-desc Серверы Dell б/у
+                                                ul.tag-list.menu-full__tag-list
+                                                    lili.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 1U
+                                                    lili.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 2U
+                                            li.menu-full__item
+                                                a.menu-full__link(href="#" title = "заголовок H1")
+                                                    span.menu-full__link-desc Серверы IBM б/у
+                                li.menu-full__item
+                                    a.menu-full__link(href="#" title = "заголовок H1")
+                                        span.menu-full__link-desc Серверы
+                                li.menu-full__item.menu-full__item_extra
+                                    a.menu-full__link(href="#" title = "заголовок H1")
+                                        span.menu-full__link-desc Конфигуратор серверов
+                                    .menu-full__list-extra
+                                        ul.menu-full__list.menu-full__list_extra.menu-full__list_tag
+                                            li.menu-full__item
+                                                a.menu-full__link(href="#" title = "заголовок H1")
+                                                    span.menu-full__link-desc Серверы Supermicro б/у
+                                                ul.tag-list.menu-full__tag-list
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 1U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 2U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 3U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 4U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") TOWER
+                                            li.menu-full__item
+                                                a.menu-full__link(href="#" title = "заголовок H1")
+                                                    span.menu-full__link-desc Серверы Dell б/у
+                                                ul.tag-list.menu-full__tag-list
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 1U
+                                                    li.tag-list__item
+                                                        a.tag-list__link(href="#" title = "заголовок H1") 2U
+                                            li.menu-full__item
+                                                a.menu-full__link(href="#" title = "заголовок H1")
+                                                    span.menu-full__link-desc Серверы IBM б/у
+                                li.menu-full__item
+                                    a.menu-full__link(href="#" title = "заголовок H1")
+                                        span.menu-full__link-desc Готовые решения
+                                li.menu-full__item
+                                    a.menu-full__link(href="#" title = "заголовок H1")
+                                        span.menu-full__link-desc Сетевое оборудование
+                                li.menu-full__item
+                                    a.menu-full__link(href="#" title = "заголовок H1")
+                                        span.menu-full__link-desc Сетевое оборудование б/у
+                    li.menu-full__item.menu-full__item_strong.menu-full__item_extra
+                        a.menu-full__link(href="#" title = "заголовок H1")
+                            span.menu-full__link-desc Конфигуратор
                         .menu-full__list-extra
                             ul.menu-full__list.menu-full__list_extra
                                 li.menu-full__item.menu-full__item_extra
@@ -63,9 +140,6 @@
                                 li.menu-full__item
                                     a.menu-full__link(href="#" title = "заголовок H1")
                                         span.menu-full__link-desc Сетевое оборудование б/у
-                    li.menu-full__item.menu-full__item_strong
-                        a.menu-full__link(href="#" title = "заголовок H1")
-                            span.menu-full__link-desc Конфигуратор
                     li.menu-full__item
                         a.menu-full__link(href="#" title = "заголовок H1")
                             span.menu-full__link-desc Блог
