@@ -23,7 +23,6 @@ function menuFullLinkCheck(event) {
 
     if (!eventParent
         || eventParent.classList.contains('menu-full__item_opened'))  {
-        console.log(5);
         return true;
 
     }  else if (eventParentOpened) {
@@ -31,30 +30,29 @@ function menuFullLinkCheck(event) {
         eventParentOpenedAll.forEach(
             item => { item.classList.remove('menu-full__item_opened')  });
         eventParent.classList.add('menu-full__item_opened');
-        console.log(1);
 
     } else if (eventModal.classList.contains('modal_col-2')) {
         event.preventDefault();
         eventParent.classList.add('menu-full__item_opened');
         eventTarget.closest('.modal_col-2').classList.add('modal_col-1');
         eventTarget.closest('.modal_col-2').classList.remove('modal_col-2');
-        console.log(2);
+
     } else if (eventModal.classList.contains('modal_col-1')) {
         event.preventDefault();
         eventParent.classList.add('menu-full__item_opened');
         eventTarget.closest('.modal_col-1').classList.add('modal_col-2');
         eventTarget.closest('.modal_col-1').classList.remove('modal_col-1');
-        console.log(3);
+
     } else if (eventModal.classList.contains('modal')) {
         event.preventDefault();
 
         eventParent.classList.add('menu-full__item_opened');
         eventTarget.closest('.modal').classList.add('modal_overflow-visible');
         eventTarget.closest('.modal').classList.add('modal_col-1');
-        console.log(4);
+
     } else {
         return true;
-        console.log(6);
+
     }
 }
 

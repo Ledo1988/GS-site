@@ -4,6 +4,11 @@
         include ../../blocks/configurator-result/configurator-result
     include ../../blocks/promo/promo
     .configurator__items
+        .configurator__item
+            .configurator__hot-options
+                include ../hot-options/hot-options
+                a.configurator__item-link(href="#" title="заголовок H1")
+                    img.configurator__item-img(src="/local/img/img_configurator-1.png")
     .configurator__filter
         form.configurator__form(name="configurator-filter")
             .intput-filter
