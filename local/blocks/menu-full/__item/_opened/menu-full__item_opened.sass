@@ -6,3 +6,16 @@
 		
 	> .menu-full__link::after
 		background-image: url('/local/img/ico_arrow-green.png')
+		
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 100%
+		min-width: 340px
+		height: 100%
+		background: white
+		opacity: 1
+		z-index: 1
+		transition: 0.2s ease-in-out
