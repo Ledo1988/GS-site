@@ -1,0 +1,43 @@
+.configurator__items_one-col
+	grid-template-columns: auto
+	
+	.configurator__item
+		display: grid
+		grid-template-columns: 300px 380px auto
+		grid-template-rows: auto auto
+		height: fit-content
+		grid-template-areas: "hot-options hot-options hot-options" "img main buy"
+		grid-row-gap: 10px
+		grid-column-gap: 30px
+		padding-right: 30px
+		
+	.configurator__hot-options
+		grid-area: hot-options
+		
+	.configurator__item-link
+		grid-area: img
+		
+	.configurator__item-main
+		grid-area: main
+	
+	.configurator__item-options
+		grid-template-columns: auto
+	
+	.configurator__item-title
+		min-height: 0
+	
+	.configurator__item-img
+		width: 280px
+		max-height: 180px
+	
+	.input-compare
+		width: 100%
+		margin-top: 13px
+	
+	.configurator__item-buy
+		flex-wrap: wrap
+		grid-area: buy
+		
+	.configurator__item-buy-btn
+		margin-right: 0
+		flex-grow: 1
