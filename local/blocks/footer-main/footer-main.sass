@@ -1,6 +1,12 @@
 .footer-main
 	display: grid
-	grid-template-columns: repeat(6, auto)
+	grid-template-columns: 170px 200px 170px 220px auto
 	grid-gap: 80px
 	padding-bottom: 22px
 	border-bottom: 1px solid #4E4E4E
+	
+	@media (max-width: $xl)
+		grid-template-columns: auto auto auto auto
+		grid-template-rows: auto auto
+		grid-template-areas: "one two three four" "long long long long"
+		grid-row-gap: 30px

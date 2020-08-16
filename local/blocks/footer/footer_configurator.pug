@@ -1,0 +1,63 @@
+.footer
+    footer.footer__content
+        .footer-main
+            .footer__item.footer-item
+                .footer-item__title Каталог
+                ul.footer__list
+                    - var footerTitle = "Серверы";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Серверы б/у";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Конфигуратор серверов";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Готовые решения";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Сетевое оборудование";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Сетевое оборудование б/у";
+                    include __list-item/footer__list-item
+                    - var footerTitle = "Дисковые полки";
+                    include __list-item/footer__list-item
+                    - var footerTitle = "Дисковые полки б/у";
+            .footer__item.footer-item
+                .footer-item__title Конфигуратор
+                ul.footer__list
+                    - var footerTitle = "Базовый конфигуратор";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Стандартный конфигуратор";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Продвинутый конфигуратор";
+                        include __list-item/footer__list-item
+            .footer__item.footer-item
+                .footer-item__title Сервис и помощь
+                ul.footer__list
+                    - var footerTitle = "Оплата";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Доставка";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Гарантия";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Элементы надёжности";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Личный кабинет";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Регистрация на сайте";
+                    include __list-item/footer__list-item
+            .footer__item.footer-item
+                .footer-item__title Информация о компании
+                ul.footer__list
+                    - var footerTitle = "О компании";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Блог";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Контакты";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Акции";
+                        include __list-item/footer__list-item
+                    - var footerTitle = "Политика конфиденциальности";
+                        include __list-item/footer__list-item
+            .footer__item.footer-item
+                include ../footer-contacts/footer-contacts
+        include ../footer-add/footer-add
+        .modal-overlay
+        include ../filter/filter

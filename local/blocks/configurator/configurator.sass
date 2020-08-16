@@ -22,10 +22,14 @@
 @import "__item-buy/configurator__item-buy"
 @import "__item-buy-btn/configurator__item-buy-btn"
 @import "__hot-options/configurator__hot-options"
+@import "__btn-show-more/configurator__btn-show-more"
+@import "../pagination/pagination"
+
+@import "../filter/filter"
 
 .configurator
 	display: grid
-	grid-template-columns: auto 300px
+	grid-template-columns: calc(100% - 320px) 300px
 	grid-column-gap: 20px
 	grid-row-gap: 10px
 	

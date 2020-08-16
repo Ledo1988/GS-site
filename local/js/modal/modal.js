@@ -11,6 +11,7 @@ let modalOverflowClass = "modal-overlay_visible";
 let popupModal;
 
 function modalTriggerCheck(trigger) {
+
     const { popupTrigger } = trigger.dataset;
 
     popupModal = document.querySelector(`[data-popup-modal="${popupTrigger}"]`);
