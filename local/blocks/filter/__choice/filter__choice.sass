@@ -1,0 +1,37 @@
+.filter__choice
+	
+	.input-filter
+		max-width: 100%
+		margin-bottom: 24px
+		
+		&:last-of-type
+			margin-bottom: 0
+			
+	.input-filter__label
+		border: none
+		padding: 0
+		font-weight: 400
+		font-size: 14px
+		
+	.input-filter__checkmark
+		width: 20px
+		height: 20px
+		color: $color-white
+		border: 1px solid #E1E1E1
+		border-radius: 2px
+		transition: $transition
+		padding: 3px
+		font-size: 12px
+		
+	.input-filter:hover .input-filter__label,
+	.input-filter:focus .input-filter__label
+		background-color: transparent
+	
+		
+	.input-filter__input:checked ~ .input-filter__label
+		color: $color-black
+		background-color: transparent
+		
+	.input-filter__input:checked ~ .input-filter__label	.input-filter__checkmark
+		background-color: $color-blue
+		border-color: $color-blue

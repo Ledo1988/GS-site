@@ -40,9 +40,11 @@ function filterTriggerCheck(filter) {
         let value = values[handle];
 
         if (handle) {
+            filterInputNumberMax.value.replace(" ","");
             filterInputNumberMax.value = Math.round(value);
 
         } else {
+            filterInputNumberMin.value.replace(" ","");
             filterInputNumberMin.value = Math.round(value);
         }
 
@@ -60,11 +62,11 @@ function filterTriggerCheck(filter) {
 
 
     filterInputNumberMin.addEventListener('change', function () {
-        currentFilter.noUiSlider.set([this.value, null]);
+        currentFilter.noUiSlider.set([this.value.replace(" ",""), null]);
     });
 
     filterInputNumberMax.addEventListener('change', function () {
-        currentFilter.noUiSlider.set([null, this.value]);
+        currentFilter.noUiSlider.set([null, this.value.replace(" ","")]);
     });
 
 
