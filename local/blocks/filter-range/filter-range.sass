@@ -1,0 +1,20 @@
+@import "vendor/noUi-handle"
+@import "vendor/noUi-connect"
+@import "__input/filter-range__input"
+@import "__content/filter-range__content"
+@import "__text/filter-range__text"
+
+.filter-range
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	border: none
+	box-shadow: none
+	background-color: $color-white
+	height: auto
+	
+	&_changed
+		.filter-range__content
+			color: $color-black
+			font-weight: 500

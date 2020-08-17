@@ -13,8 +13,20 @@
         .filter__main
             .filter__title Цена
             .filter__range.filter-range(data-filter="filter-range_rate")
-                input.filter-range__input.filter-range__input_min(data-filter-min="filter-rate" min="0" max="150000" step="500" type="number")
-                input.filter-range__input.filter-range__input_max(data-filter-max="filter-rate" min="0" max="150000" step="500" type="number")
+                .filter-range__content
+                    span.filter-range__text от
+                    input.filter-range__input.filter-range__input_min(data-filter-min="filter-rate" min="0" max="150000" step="500" type="text")
+                    span.filter-range__text ₽
+
+                .filter-range__content
+                    span.filter-range__text до
+                    input.filter-range__input.filter-range__input_max(data-filter-max="filter-rate" min="0" max="150000" step="500" type="text")
+                    span.filter-range__text ₽
+                .filter__btns
+                    button.button.button_long.filter__btn-reset(type="reset") Очистить фильтр
+                    button.button.button_long.button_blue.filter__btn-submit(type="submit") Применить
+
+
 
 .filter.modal.modal_right.modal_hidden(data-popup-modal="filter-option")
     .filter__content.modal__content
@@ -31,6 +43,16 @@
         .filter__main
             .filter__title Опции
             .filter__range.filter-range(data-filter="filter-range_option")
-                input.filter-range__input.filter-range__input_min(data-filter-min="filter-option" min="0" max="45000" step="100" type="number")
-                input.filter-range__input.filter-range__input_max(data-filter-max="filter-option" min="0" max="45000" step="100" type="number")
+                .filter-range__content
+                    span.filter-range__text от
+                    input.filter-range__input.filter-range__input_min(data-filter-min="filter-option" min="0" max="45000" step="100" type="text")
+                    span.filter-range__text ₽
+
+                .filter-range__content
+                    span.filter-range__text до
+                    input.filter-range__input.filter-range__input_max(data-filter-max="filter-option" min="0" max="45000" step="100" type="text")
+                    span.filter-range__text ₽
+                .filter__btns
+                    button.button.button_long.filter__btn-reset(type="reset") Очистить фильтр
+                    button.button.button_long.button_blue.filter__btn-submit(type="submit") Применить
 
