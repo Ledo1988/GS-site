@@ -12,3 +12,25 @@
                         use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
         .filter__main
             .filter__title Цена
+            .filter__range.filter-range(data-filter="filter-range_rate")
+                input.filter-range__input.filter-range__input_min(data-filter-min="filter-rate" min="0" max="150000" step="500" type="number")
+                input.filter-range__input.filter-range__input_max(data-filter-max="filter-rate" min="0" max="150000" step="500" type="number")
+
+.filter.modal.modal_right.modal_hidden(data-popup-modal="filter-option")
+    .filter__content.modal__content
+        .filter__top
+            a.filter__link.filter__action-link_return.modal__close-link(href="#" title = "заголовок H1")
+                .icon.icon_fill
+                    svg.icon__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_arrow-left")
+                span.filter__link-text Все фильтры
+            a.filter__link.filter__action-link_close.modal__close-link(href="#" title="заголовок H1")
+                .icon.icon_fill
+                    svg.icon__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
+        .filter__main
+            .filter__title Опции
+            .filter__range.filter-range(data-filter="filter-range_option")
+                input.filter-range__input.filter-range__input_min(data-filter-min="filter-option" min="0" max="45000" step="100" type="number")
+                input.filter-range__input.filter-range__input_max(data-filter-max="filter-option" min="0" max="45000" step="100" type="number")
+
