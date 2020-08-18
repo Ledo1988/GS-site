@@ -4,14 +4,19 @@
 	align-items: center
 	flex-wrap: wrap
 	justify-content: flex-start
+	width: 100%
 	max-width: 1085px
 	height: auto
 	transition: transform 0.2s 0s
 	transition-property: transform, visibility, min-height
 	min-height: 20px
+	height: auto
+	overflow: hidden
 	
 	&_hidden
 		width: 0
+		height: 0
 		min-height: 0
-		transform: translateY(120px)
+		transform: translateY(20px)
 		visibility: hidden
+		margin: 0

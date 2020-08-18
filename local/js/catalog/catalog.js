@@ -1,4 +1,5 @@
 let elem = document.querySelector('.catalog');
+
 let msnry = new Masonry( elem, {
     // options
     itemSelector: '.catalog__item',
