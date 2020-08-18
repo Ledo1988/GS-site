@@ -25,6 +25,7 @@ function modalTriggerCheck(trigger) {
 function bodyPageCheck(event) {
 
     if (event.target.closest('.modal__open-link')) {
+
         return false;
     } else if (bodyPage.classList.contains(bodyOverflowClass) &&
         (event.target.closest('.' + modalCloseClass) || !event.target.closest('.' + modalContentClass))) {
@@ -34,6 +35,11 @@ function bodyPageCheck(event) {
         overlayBlock.classList.toggle(modalOverflowClass);
         menuFullCloseAction();
     }
+
+    filterTotalCheck();
+
+
+
 }
 
 modalTriggers.forEach(trigger => {

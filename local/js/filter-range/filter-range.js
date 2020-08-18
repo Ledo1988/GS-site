@@ -1,6 +1,9 @@
 const filterTriggers = document.querySelectorAll(".filter-range");
 const filterInputAll = document.querySelectorAll(".filter-range__input");
 
+const filterForms = document.querySelectorAll(".filter-form");
+
+
 function filterTriggerCheck(filter) {
 
     let noUISliderMin;
@@ -26,14 +29,18 @@ function filterTriggerCheck(filter) {
         noUISliderEnd = 45000;
     }
 
-    noUiSlider.create(currentFilter, {
-        start: [noUISliderStart, noUISliderEnd],
-        connect: true,
-        range: {
-            'min': noUISliderMin,
-            'max': noUISliderMax
-        }
-    });
+    if (currentFilter.noUiSlider !== undefined) {
+        return true;
+    } else {
+        noUiSlider.create(currentFilter, {
+            start: [noUISliderStart, noUISliderEnd],
+            connect: true,
+            range: {
+                'min': noUISliderMin,
+                'max': noUISliderMax
+            }
+        });
+    }
 
     currentFilter.noUiSlider.on('update', function (values, handle) {
 
@@ -80,10 +87,20 @@ function filterTriggerCheck(filter) {
 }
 
 function filterInputAllWidth(item) {
+    item.value = item.value.toString();
     item.value = item.value.replace(/ /g,"");
     item.value = item.value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 
     item.style.width = ((item.value.length + 2) * 8) + 'px';
+}
+
+function enterFilterSubmitPrevent (event) {
+
+
+    if (event.keyCode === 13) {
+
+        event.preventDefault();
+    }
 }
 
 
@@ -94,6 +111,7 @@ filterInputAll.forEach(item => { filterInputAllWidth(item) });
 filterInputAll.forEach(item => {
     item.addEventListener('input', () => { filterInputAllWidth(item) }) });
 
-
+filterTriggers.forEach(item => {
+    item.addEventListener('keypress', (event) => { enterFilterSubmitPrevent(event) }) });
 
 

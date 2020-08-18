@@ -12,7 +12,7 @@
                         use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
         .filter__main
             .filter__title Цена
-            form.filter__range.filter-range(data-filter="filter-range_rate")
+            form.filter__range.filter-range.filter-form(data-filter="filter-range_rate")
                 .filter-range__content
                     span.filter-range__text от
                     input.filter-range__input.filter-range__input_min(data-filter-min="filter-rate" min="0" max="150000" step="500" type="text")
@@ -40,7 +40,7 @@
                         use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
         .filter__main
             .filter__title Конфигурация
-            form.filter__choice(data-filter="filter-range_config")
+            form.filter__choice.filter-form(data-filter="filter-range_config")
                 .input-filter
                     input.input-filter__input(type="checkbox" id="inputFilterConfig1")
                     label.input-filter__label(for="inputFilterConfig1")
@@ -75,8 +75,6 @@
                     button.button.button_long.filter__btn-reset(type="reset") Очистить фильтр
                     button.button.button_long.button_blue.filter__btn-submit(type="submit") Применить
 
-
-
 .filter.modal.modal_right.modal_hidden(data-popup-modal="filter-option")
     .filter__content.modal__content
         .filter__top
@@ -91,7 +89,7 @@
                         use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
         .filter__main
             .filter__title Состояние
-            form.filter__range.filter-range(data-filter="filter-range_option")
+            form.filter__range.filter-range.filter-form(data-filter="filter-range_option")
                 .filter-range__content
                     span.filter-range__text от
                     input.filter-range__input.filter-range__input_min(data-filter-min="filter-option" min="0" max="45000" step="100" type="text")
@@ -104,4 +102,6 @@
                 .filter__btns
                     button.button.button_long.filter__btn-reset(type="reset") Очистить фильтр
                     button.button.button_long.button_blue.filter__btn-submit(type="submit") Применить
+
+include ../filter-total/filter-total
 

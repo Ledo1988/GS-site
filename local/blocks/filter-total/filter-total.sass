@@ -1,0 +1,31 @@
+@import "__content/filter-total__content"
+@import "__title/filter-total__title"
+@import "__text/filter-total__text"
+@import "__open-link/filter-total__open-link"
+@import "__list/filter-total__list"
+@import "__item/filter-total__item"
+@import "__item-title/filter-total__item-title"
+@import "__subitems/filter-total__subitems"
+@import "__icon/filter-total__icon"
+@import "__subitem/filter-total__subitem"
+
+
+.filter-total
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100vw
+	background: $color-athensGray
+	@include container-fluid
+	min-height: 65px
+	padding: 23px 0
+	color: $color-black
+	font-weight: 500
+	transition: transform 0.2s 0s
+	transition-property: transform, visibility, min-height
+	
+	&_hidden
+		width: 0
+		min-height: 0
+		transform: translateY(120px)
+		visibility: hidden
