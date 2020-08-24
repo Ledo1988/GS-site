@@ -1,0 +1,149 @@
+block variables
+    - const title = "UI kit";
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title #{title}
+        meta(name="theme-color" content="#fff")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        meta(name="robots" content="noindex, nofollow")
+        meta(name="googlebot" content="noindex, nofollow")
+        meta(name="yandex" content="none")
+        link(rel="stylesheet" href="/local/styles/pages/ui-kit.css")
+    body
+        block content
+            h1 Заголовок h1
+
+            h2 Кнопки
+            div(width="300")
+                a.button.button_long.button_blue(href='javascript:void(0);') Узнать подробнее
+                p
+                a.button.button_long.button_red.button_icon(href='javascript:void(0);')
+                    .button__content
+                        svg.button__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_tel")
+                        span.button__text Получить консультацию
+                p
+                a.button.button_long(href='javascript:void(0);') Смотреть в каталоге (12)
+                p
+                a.button.button_long.button_red.button_icon(href='javascript:void(0);')
+                    .button__content
+                        svg.button__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_cart")
+                        span.button__text В корзину
+                p
+                a.button.button_red.button_icon-sm(href='javascript:void(0);')
+                    svg.button__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_cart")
+
+
+            h2 Иконки
+            p
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
+            p
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_arrow-left")
+
+            p
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_search")
+            p
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_blank")
+            p
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_person")
+            p
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_list")
+            p
+            .icon.icon_stroke
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_cart-empty")
+                span.icon__amount
+            p
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_location")
+                span.icon__amount
+            p
+            .icon.icon_active.icon_stroke
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_cart-empty")
+                span.icon__amount 12
+            p
+            a.icon-menu(href='javascript:void(0);')
+                svg.icon-menu__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_menu")
+            p
+            div(style="background: #000000;")
+                a.icon-social.icon-social_vk(href='javascript:void(0);')
+                    svg.icon-social__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_vk")
+                a.icon-social.icon-social_fb(href='javascript:void(0);')
+                    svg.icon-social__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_facebook")
+                a.icon-social.icon-social_ytb(href='javascript:void(0);')
+                    svg.icon-social__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_youtube")
+
+            h2 Inputs
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterRate")
+                label.input-filter__label(for="inputFilterRate")
+                    span.input-filter__title Цена
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            p
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterRate2" checked="checked")
+                label.input-filter__label(for="inputFilterRate2")
+                    span.input-filter__title Цена
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            p
+            .input-choice
+                input.input-choice__input(type="checkbox" id="inputChoiceBase")
+                label.input-choice__label(for="inputChoiceBase")
+                    span.input-choice__checkmark
+                        svg.input-choice__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_checkmark")
+                    span.input-choice__title Базовый
+            p
+            .input-choice
+                input.input-choice__input(type="checkbox" id="inputChoiceBase2" checked="checked")
+                label.input-choice__label(for="inputChoiceBase2")
+                    span.input-choice__checkmark
+                        svg.input-choice__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_checkmark")
+                    span.input-choice__title Базовый
+            p
+            include local/blocks/input-view/input-view
+            p
+            include local/blocks/counter/counter
+            p
+            .input-compare__item
+                input(class="input-compare__item" type="checkbox" id="inputCompare")
+                label(class="input-view__label" for="inputCompare")
+                    span.input-compare__icon.fas.fa-list-ul
+                    span.input-compare__title Добавить в сравнение
+
+        block scripts
+            script(src="/local/js/counter/counter.js")
+            script(src="/local/js/ui-kit.js")

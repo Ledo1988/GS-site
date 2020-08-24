@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GT-Site</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="yandex" content="none">
+    <link rel="stylesheet" href="/local/styles/pages/configurator.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__location"><a class="location" href="javascript:void(0);" title="заголовок H1">
+          <div class="icon icon_location location__icon">
+            <svg class="icon__svg">
+              <use xlink:href="/local/img/icons/sprite.svg#ico_location"></use>
+            </svg>
+          </div><span class="location__title">Санкт-Петербург</span></a>
+        <ul class="menu-location">
+          <li class="menu-location__item"><a class="menu-location__link" href="#" title="заголовок H1">Доставка</a></li>
+          <li class="menu-location__item"><a class="menu-location__link" href="#" title="заголовок H1">Гарантия</a></li>
+          <li class="menu-location__item"><a class="menu-location__link" href="#" title="заголовок H1">Оплата</a></li>
+        </ul>
+        <ul class="languages">
+          <li class="languages__item languages__item_active"><a class="languages__link" href="#" title="заголовок H1"> RU</a></li>
+          <li class="languages__item "><a class="languages__link" href="#" title="заголовок H1"> EN</a></li>
+        </ul>
+      </div>
+      <div class="header__quick"><a class="logo" href="/" title="заголовок H1"><img class="logo__img" src="/local/img/ico_logo.png" alt="Galt Systems"></a>
+        <div class="header__quick-contacts">
+          <div class="contacts-quick"><a class="contacts-quick__link" href="tel:8 (495) 128-47-56" title="заголовок H1">8 (495) 128-47-56</a><span class="contacts-quick__desc">Пн - Пт 9:00 - 19:00</span></div>
+          <div class="contacts-quick"><a class="contacts-quick__link" href="mailto:sales@galtsystems.com" title="заголовок H1">sales@galtsystems.com</a><span class="contacts-quick__desc">Единая почта</span></div>
+        </div>
+        <ul class="menu-quick">
+          <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+              <div class="icon icon_fill menu-quick__icon">
+                <svg class="icon__svg">
+                  <use xlink:href="/local/img/icons/sprite.svg#ico_search"></use>
+                </svg>
+              </div><span class="menu-quick__title">Поиск</span></a></li>
+          <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+              <div class="icon icon_fill menu-quick__icon">
+                <svg class="icon__svg">
+                  <use xlink:href="/local/img/icons/sprite.svg#ico_blank"></use>
+                </svg>
+              </div><span class="menu-quick__title">Прайс</span></a></li>
+          <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+              <div class="icon icon_fill menu-quick__icon">
+                <svg class="icon__svg">
+                  <use xlink:href="/local/img/icons/sprite.svg#ico_person"></use>
+                </svg>
+              </div><span class="menu-quick__title">Кабинет</span></a></li>
+          <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+              <div class="icon icon_fill menu-quick__icon">
+                <svg class="icon__svg">
+                  <use xlink:href="/local/img/icons/sprite.svg#ico_list"></use>
+                </svg>
+              </div><span class="menu-quick__title">Сравнение</span></a></li>
+          <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+              <div class="icon icon_stroke menu-quick__icon">
+                <svg class="icon__svg">
+                  <use xlink:href="/local/img/icons/sprite.svg#ico_cart-empty"></use>
+                </svg>
+              </div><span class="menu-quick__title">Корзина</span></a></li>
+        </ul>
+      </div>
+      <div class="header__nav">
+        <div class="menu-full modal modal_left modal_hidden" data-popup-modal="menu-full">
+          <div class="menu-full__content modal__content">
+            <div class="menu-full__header"><a class="menu-full__action-link menu-full__action-link_close modal__close-link" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_cross"></use>
+                  </svg>
+                </div></a><a class="logo" href="/" title="заголовок H1"><img class="logo__img" src="/local/img/ico_logo.png" alt="Galt Systems"></a></div>
+            <div class="menu-full__main"><a class="menu-full__action-link menu-full__action-link_return" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_arrow-left"></use>
+                  </svg>
+                </div></a>
+              <div class="menu-full__main-item">
+                <ul class="menu-full__list">
+                  <li class="menu-full__item menu-full__item_strong menu-full__item_extra"><a class="menu-full__link" href="/catalog.html" title="заголовок H1"><span class="menu-full__link-desc">Каталог</span></a>
+                    <div class="menu-full__list-extra">
+                      <ul class="menu-full__list menu-full__list_extra">
+                        <li class="menu-full__item menu-full__item_extra"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Сервер б/у</span></a>
+                          <div class="menu-full__list-extra">
+                            <ul class="menu-full__list menu-full__list_extra menu-full__list_tag">
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы Dell б/у</span></a>
+                                <ul class="tag-list menu-full__tag-list">
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">1U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">2U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">3U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">4U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">TOWER</a></li>
+                                </ul>
+                              </li>
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы Supermico б/у</span></a>
+                                <ul class="tag-list menu-full__tag-list">
+                                  <lili class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">1U</a></lili>
+                                  <lili class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">2U</a></lili>
+                                </ul>
+                              </li>
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы IBM б/у</span></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы</span></a></li>
+                        <li class="menu-full__item menu-full__item_extra"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Конфигуратор серверов</span></a>
+                          <div class="menu-full__list-extra">
+                            <ul class="menu-full__list menu-full__list_extra menu-full__list_tag">
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы Supermicro б/у</span></a>
+                                <ul class="tag-list menu-full__tag-list">
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">1U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">2U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">3U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">4U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">TOWER</a></li>
+                                </ul>
+                              </li>
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы Dell б/у</span></a>
+                                <ul class="tag-list menu-full__tag-list">
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">1U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">2U</a></li>
+                                </ul>
+                              </li>
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы IBM б/у</span></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Готовые решения</span></a></li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Сетевое оборудование</span></a></li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Сетевое оборудование б/у</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-full__item menu-full__item_strong menu-full__item_extra"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Конфигуратор</span></a>
+                    <div class="menu-full__list-extra">
+                      <ul class="menu-full__list menu-full__list_extra">
+                        <li class="menu-full__item menu-full__item_extra"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Сервер б/у</span></a>
+                          <div class="menu-full__list-extra">
+                            <ul class="menu-full__list menu-full__list_extra menu-full__list_tag">
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы Supermicro б/у</span></a>
+                                <ul class="tag-list menu-full__tag-list">
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">1U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">2U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">3U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">4U</a></li>
+                                  <li class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">TOWER</a></li>
+                                </ul>
+                              </li>
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы Dell б/у</span></a>
+                                <ul class="tag-list menu-full__tag-list">
+                                  <lili class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">1U</a></lili>
+                                  <lili class="tag-list__item"><a class="tag-list__link" href="#" title="заголовок H1">2U</a></lili>
+                                </ul>
+                              </li>
+                              <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы IBM б/у</span></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Серверы</span></a></li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Конфигуратор серверов</span></a></li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Готовые решения</span></a></li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Сетевое оборудование</span></a></li>
+                        <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Сетевое оборудование б/у</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Блог</span></a></li>
+                  <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">О компании</span></a></li>
+                  <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Акции</span></a></li>
+                  <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Контакты</span></a></li>
+                  <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Оплата</span></a></li>
+                  <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Гарантии</span></a></li>
+                  <li class="menu-full__item"><a class="menu-full__link" href="#" title="заголовок H1"><span class="menu-full__link-desc">Доставка</span></a></li>
+                </ul>
+                <ul class="menu-quick menu-full__menu-quick">
+                  <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+                      <div class="icon icon_fill menu-quick__icon">
+                        <svg class="icon__svg">
+                          <use xlink:href="/local/img/icons/sprite.svg#ico_person"></use>
+                        </svg>
+                      </div><span class="menu-quick__title">Кабинет</span></a></li>
+                  <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+                      <div class="icon icon_fill menu-quick__icon">
+                        <svg class="icon__svg">
+                          <use xlink:href="/local/img/icons/sprite.svg#ico_list"></use>
+                        </svg>
+                      </div><span class="menu-quick__title">Сравнение</span></a></li>
+                  <li class="menu-quick__item"><a class="menu-quick__link" href="#" title="заголовок H1">
+                      <div class="icon icon_stroke menu-quick__icon">
+                        <svg class="icon__svg">
+                          <use xlink:href="/local/img/icons/sprite.svg#ico_cart-empty"></use>
+                        </svg>
+                      </div><span class="menu-quick__title">Корзина</span></a></li>
+                </ul>
+                <div class="menu-full__quick-contacts">
+                  <div class="contacts-quick"><a class="contacts-quick__link" href="tel:8 (495) 128-47-56" title="заголовок H1">8 (495) 128-47-56</a><span class="contacts-quick__desc">Пн - Пт 9:00 - 19:00</span></div>
+                  <div class="contacts-quick"><a class="contacts-quick__link" href="mailto:sales@galtsystems.com" title="заголовок H1">sales@galtsystems.com</a><span class="contacts-quick__desc">Единая почта</span></div>
+                </div><a class="button button_long button_blue menu-full__btn" href="javascript:void(0);">Получить предложение</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-burger modal__open-link" data-popup-trigger="menu-full"><a class="icon-menu menu-burger__link" href="javascript:void(0);" title="заголовок H1">
+            <svg class="icon-menu__svg">
+              <use xlink:href="/local/img/icons/sprite.svg#ico_menu"></use>
+            </svg></a></div>
+        <nav class="menu-nav">
+          <ul class="menu-nav__list">
+            <li class="menu-nav__item"><a class="menu-nav__link" href="/catalog.html" title="заголовок H1"> Каталог</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="/configurator.html" title="заголовок H1"> Конфигуратор</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="/configurator.html" title="заголовок H1"> О компании</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="/configurator.html" title="заголовок H1"> Блог</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="/configurator.html" title="заголовок H1"> Акции</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="/configurator.html" title="заголовок H1"> Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__intro">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item">Серверные платформы б/у</li>
+          </ul>
+        </div>
+        <h1>Серверные платформы б/у</h1>
+        <div class="configurator">
+          <div class="configurator__main">
+            <ul class="producer-list configurator__producer-list">
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">DELL</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">SUPERMICRO</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">ASUS</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">IBM</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">AMD</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">DELL</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">SUPERMICRO</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">DELL</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">SUPERMICRO</a></li>
+              <li class="producer-list__item"><a class="producer-list__link" href="" title="заголовок H1">DELL</a></li>
+            </ul>
+            <div class="configurator-result configurator__configurator-result">
+              <div class="configurator-result__title">Найдено 15 товаров</div>
+              <div class="configurator-result__filter">
+                <div class="configurator-result__drop-down drop-down">
+                  <div class="drop-down__title">Сортировать:</div>
+                  <div class="drop-down__choice">
+                    <div class="drop-down__result">По убыванию цены<span class="drop-down__result-icon fas fa-angle-down"></span></div>
+                    <div class="drop-down__list drop-down__list_hide">
+                      <div class="drop-down__option" data-sort="lowerRate">По убыванию цены</div>
+                      <div class="drop-down__option" data-sort="higherRate">По возрастанию цены</div>
+                      <div class="drop-down__option" data-sort="popular">По популярности</div>
+                      <div class="drop-down__option" data-sort="rating">По рейтингу</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="configurator-result__sort">
+                  <div class="configurator-result__currency">
+                    <div class="input-view">
+                      <div class="input-view__item">
+                        <input class="input-view__input" type="radio" id="inputRateRub" name="inputRate" value="rubles" checked="checked">
+                        <label class="input-view__label" for="inputRateRub">
+                          <svg class="input-view__svg">
+                            <use xlink:href="/local/img/icons/sprite.svg#ico_currency-rub"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="input-view__item">
+                        <input class="input-view__input" type="radio" id="inputRateDol" name="inputRate" value="dollars">
+                        <label class="input-view__label" for="inputRateDol">
+                          <svg class="input-view__svg">
+                            <use xlink:href="/local/img/icons/sprite.svg#ico_currency-dol"></use>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="configurator-result__view">
+                    <div class="input-view">
+                      <div class="input-view__item">
+                        <input class="input-view__input" type="radio" id="inputViewCol1" name="inputView" value="column" checked="checked">
+                        <label class="input-view__label" for="inputViewCol1">
+                          <svg class="input-view__svg">
+                            <use xlink:href="/local/img/icons/sprite.svg#ico_column"></use>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="input-view__item">
+                        <input class="input-view__input" type="radio" id="inputViewCol2" name="inputView" value="twoColumns">
+                        <label class="input-view__label" for="inputViewCol2">
+                          <svg class="input-view__svg">
+                            <use xlink:href="/local/img/icons/sprite.svg#ico_columns-2"></use>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo configurator__promo">
+            <div class="promo__title">Поможем с выбором и конфигурацией сервера</div><img class="promo__img" src="/local/img/img_promo.png" alt="Промо"><a class="button button_long button_red button_icon promo__button" href="javascript:void(0);">
+              <div class="button__content">
+                <svg class="button__svg">
+                  <use xlink:href="/local/img/icons/sprite.svg#ico_tel"></use>
+                </svg><span class="button__text">Получить консультацию</span>
+              </div></a>
+          </div>
+          <div class="configurator__items-content">
+            <div class="configurator__items configurator__items_one-col">
+              <div class="configurator__item">
+                <div class="configurator__hot-options">
+                  <ul class="hot-options">
+                    <li class="hot-options__item hot-options__item_favourite"><span class="fas fa-star hot-options__icon"></span><span class="hot-options__title">4.7</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Выгодно</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Новинка</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Б/У</span></li>
+                  </ul>
+                </div><a class="configurator__item-link" href="#" title="заголовок H1"><img class="configurator__item-img" src="/local/img/img_configurator-1.png"></a>
+                <div class="configurator__item-main"><a class="configurator__item-link" href="#" title="заголовок H1">
+                    <div class="configurator__item-title">Hewlett-Packard HP BL460cG8</div></a>
+                  <ul class="configurator__item-options">
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">Socket:</span> LGA2011</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">RAM:</span> 16 x DDR4</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">CPU:</span> 2 x Intel Xeon e5-24xx v1/v2</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">HDD:</span> Сервер HP DL380P GEN8</li>
+                  </ul>
+                </div>
+                <div class="configurator__item-offer">
+                  <div class="configurator__item-rate configurator__item-rate_new">146 100 000 ₽<span class="configurator__item-rate-old">156 100 000 ₽</span></div>
+                  <div class="configurator__item-delivery"><span class="configurator__item-delivery-icon fas fa-truck"></span>2 дня, бесплатно</div>
+                  <div class="configurator__item-buy"><a class="button button_red button_icon-sm" href="javascript:void(0);" title="заголовок H1">
+                      <svg class="button__svg">
+                        <use xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1"></use>
+                      </svg></a><a class="button button_long button_blue configurator__item-buy-btn" href="javascript:void(0);">Конфигурировать</a>
+                    <div class="input-compare">
+                      <input class="input-compare__item" type="checkbox" id="inputCompare">
+                      <label class="input-compare__label" for="inputCompare"><span class="input-compare__icon fas fa-list-ul"></span><span class="input-compare__title">Добавить в сравнение</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="configurator__item">
+                <div class="configurator__hot-options">
+                  <ul class="hot-options">
+                    <li class="hot-options__item hot-options__item_favourite"><span class="fas fa-star hot-options__icon"></span><span class="hot-options__title">4.7</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Выгодно</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Новинка</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Б/У</span></li>
+                  </ul>
+                </div><a class="configurator__item-link" href="#" title="заголовок H1"><img class="configurator__item-img" src="/local/img/img_configurator-2.png"></a>
+                <div class="configurator__item-main"><a class="configurator__item-link" href="#" title="заголовок H1">
+                    <div class="configurator__item-title">Hewlett-Packard HP BL460cG8 Intel Xeon E5-26XX/E5-26XXV2</div></a>
+                  <ul class="configurator__item-options">
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">Socket:</span> LGA2011</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">RAM:</span> 16 x DDR4</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">CPU:</span> 2 x Intel Xeon e5-24xx v1/v2</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">HDD:</span> Сервер HP DL380P GEN8</li>
+                  </ul>
+                </div>
+                <div class="configurator__item-offer">
+                  <div class="configurator__item-rate">146 100 000 ₽</div>
+                  <div class="configurator__item-delivery"><span class="configurator__item-delivery-icon fas fa-truck"></span>2 дня, бесплатно</div>
+                  <div class="configurator__item-buy"><a class="button button_red button_icon-sm" href="javascript:void(0);" title="заголовок H1">
+                      <svg class="button__svg">
+                        <use xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1"></use>
+                      </svg></a><a class="button button_long button_blue configurator__item-buy-btn" href="javascript:void(0);">Конфигурировать</a>
+                    <div class="input-compare">
+                      <input class="input-compare__item" type="checkbox" id="inputCompare2">
+                      <label class="input-compare__label" for="inputCompare2"><span class="input-compare__icon fas fa-list-ul"></span><span class="input-compare__title">Добавить в сравнение</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="configurator__item">
+                <div class="configurator__hot-options">
+                  <ul class="hot-options">
+                    <li class="hot-options__item hot-options__item_favourite"><span class="fas fa-star hot-options__icon"></span><span class="hot-options__title">4.7</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Выгодно</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Новинка</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Б/У</span></li>
+                  </ul>
+                </div><a class="configurator__item-link" href="#" title="заголовок H1"><img class="configurator__item-img" src="/local/img/img_configurator-1.png"></a>
+                <div class="configurator__item-main"><a class="configurator__item-link" href="#" title="заголовок H1">
+                    <div class="configurator__item-title">Hewlett-Packard HP BL460cG8</div></a>
+                  <ul class="configurator__item-options">
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">Socket:</span> LGA2011</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">RAM:</span> 16 x DDR4</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">CPU:</span> 2 x Intel Xeon e5-24xx v1/v2</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">HDD:</span> Сервер HP DL380P GEN8</li>
+                  </ul>
+                </div>
+                <div class="configurator__item-offer">
+                  <div class="configurator__item-rate configurator__item-rate_new">146 100 000 ₽<span class="configurator__item-rate-old">156 100 000 ₽</span></div>
+                  <div class="configurator__item-delivery"><span class="configurator__item-delivery-icon fas fa-truck"></span>2 дня, бесплатно</div>
+                  <div class="configurator__item-buy"><a class="button button_red button_icon-sm" href="javascript:void(0);" title="заголовок H1">
+                      <svg class="button__svg">
+                        <use xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1"></use>
+                      </svg></a><a class="button button_long button_blue configurator__item-buy-btn" href="javascript:void(0);">Конфигурировать</a>
+                    <div class="input-compare">
+                      <input class="input-compare__item" type="checkbox" id="inputCompare3">
+                      <label class="input-compare__label" for="inputCompare3"><span class="input-compare__icon fas fa-list-ul"></span><span class="input-compare__title">Добавить в сравнение</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="configurator__item">
+                <div class="configurator__hot-options">
+                  <ul class="hot-options">
+                    <li class="hot-options__item hot-options__item_favourite"><span class="fas fa-star hot-options__icon"></span><span class="hot-options__title">4.7</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Выгодно</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Новинка</span></li>
+                    <li class="hot-options__item"><span class="hot-options__title">Б/У</span></li>
+                  </ul>
+                </div><a class="configurator__item-link" href="#" title="заголовок H1"><img class="configurator__item-img" src="/local/img/img_configurator-2.png"></a>
+                <div class="configurator__item-main"><a class="configurator__item-link" href="#" title="заголовок H1">
+                    <div class="configurator__item-title">Hewlett-Packard HP BL460cG8 Intel Xeon E5-26XX/E5-26XXV2</div></a>
+                  <ul class="configurator__item-options">
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">Socket:</span> LGA2011</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">RAM:</span> 16 x DDR4</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">CPU:</span> 2 x Intel Xeon e5-24xx v1/v2</li>
+                    <li class="configurator__item-option"><span class="configurator__item-option-title">HDD:</span> Сервер HP DL380P GEN8</li>
+                  </ul>
+                </div>
+                <div class="configurator__item-offer">
+                  <div class="configurator__item-rate">146 100 000 ₽</div>
+                  <div class="configurator__item-delivery"><span class="configurator__item-delivery-icon fas fa-truck"></span>2 дня, бесплатно</div>
+                  <div class="configurator__item-buy"><a class="button button_red button_icon-sm" href="javascript:void(0);" title="заголовок H1">
+                      <svg class="button__svg">
+                        <use xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1"></use>
+                      </svg></a><a class="button button_long button_blue configurator__item-buy-btn" href="javascript:void(0);">Конфигурировать</a>
+                    <div class="input-compare">
+                      <input class="input-compare__item" type="checkbox" id="inputCompare4">
+                      <label class="input-compare__label" for="inputCompare4"><span class="input-compare__icon fas fa-list-ul"></span><span class="input-compare__title">Добавить в сравнение</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="configurator__btn-show-more button button_long" type="button">Показать ещё</button>
+            <div class="configurator__pagination">
+              <div class="pagination"><a class="pagination__btn pagination__btn_back fas fa-angle-left" href="#" title="заголовок H1"></a>
+                <ul class="pagination__list">
+                  <li class="pagination__item pagination__item_active"><span class="pagination__link">1</span></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#" title="заголовок H1">2</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#" title="заголовок H1">3</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#" title="заголовок H1">...</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#" title="заголовок H1">22</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#" title="заголовок H1">23</a></li>
+                </ul><a class="pagination__btn pagination__btn_forward fas fa-angle-right" href="#" title="заголовок H1"></a>
+              </div>
+            </div>
+          </div>
+          <div class="configurator__filter">
+            <form class="configurator__form" name="configurator-filter">
+              <div class="input-filter">
+                <input class="input-filter__input modal__open-link" type="checkbox" id="inputFilterRate" data-popup-trigger="filter-rate">
+                <label class="input-filter__label" for="inputFilterRate"><span class="input-filter__title">Цена</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input modal__open-link" type="checkbox" id="inputFilterConfig" data-popup-trigger="filter-config">
+                <label class="input-filter__label" for="inputFilterConfig"><span class="input-filter__title">Конфигурация</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input modal__open-link" type="checkbox" id="inputFilterCondition" data-popup-trigger="filter-option">
+                <label class="input-filter__label" for="inputFilterCondition"><span class="input-filter__title">Состояние</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterProducer">
+                <label class="input-filter__label" for="inputFilterProducer"><span class="input-filter__title">Производитель</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterHeight">
+                <label class="input-filter__label" for="inputFilterHeight"><span class="input-filter__title">Высота в юнитах</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterDisk">
+                <label class="input-filter__label" for="inputFilterDisk"><span class="input-filter__title">Кол-во жёстких дисков</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterSocket">
+                <label class="input-filter__label" for="inputFilterSocket"><span class="input-filter__title">Socket</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterProc">
+                <label class="input-filter__label" for="inputFilterProc"><span class="input-filter__title">Семейство процессоров</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterProcDev">
+                <label class="input-filter__label" for="inputFilterProcDev"><span class="input-filter__title">Производитель процессора</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterSlots">
+                <label class="input-filter__label" for="inputFilterSlots"><span class="input-filter__title">Количество слотов памяти</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterMemory">
+                <label class="input-filter__label" for="inputFilterMemory"><span class="input-filter__title">Объём памяти</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterType">
+                <label class="input-filter__label" for="inputFilterType"><span class="input-filter__title">Тип сетевых портов</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterBox">
+                <label class="input-filter__label" for="inputFilterBox"><span class="input-filter__title">Тип корпуса</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterBlocks">
+                <label class="input-filter__label" for="inputFilterBlocks"><span class="input-filter__title">Количество блоков питания</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterPower">
+                <label class="input-filter__label" for="inputFilterPower"><span class="input-filter__title">Мощность блоков питания</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+              <div class="input-filter">
+                <input class="input-filter__input" type="checkbox" id="inputFilterRaid">
+                <label class="input-filter__label" for="inputFilterRaid"><span class="input-filter__title">RAID контроллер</span><span class="input-filter__checkmark">
+                    <svg class="input-filter__svg">
+                      <use xlink:href="/local/img/icons/sprite.svg#ico_arrow"></use>
+                    </svg></span></label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <footer class="footer__content">
+        <div class="footer-main">
+          <div class="footer__item footer-item">
+            <div class="footer-item__title">Каталог</div>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Серверы</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Серверы б/у</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Конфигуратор серверов</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Готовые решения</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Сетевое оборудование</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Сетевое оборудование б/у</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Дисковые полки</a></li>
+            </ul>
+          </div>
+          <div class="footer__item footer-item">
+            <div class="footer-item__title">Конфигуратор</div>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Базовый конфигуратор</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Стандартный конфигуратор</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Продвинутый конфигуратор</a></li>
+            </ul>
+          </div>
+          <div class="footer__item footer-item">
+            <div class="footer-item__title">Сервис и помощь</div>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Оплата</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Доставка</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Гарантия</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Элементы надёжности</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Личный кабинет</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Регистрация на сайте</a></li>
+            </ul>
+          </div>
+          <div class="footer__item footer-item">
+            <div class="footer-item__title">Информация о компании</div>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> О компании</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Блог</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Контакты</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Акции</a></li>
+              <li class="footer__list-item"><a class="footer__list-link" href="#"> Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+          <div class="footer__item footer-item">
+            <div class="footer-contacts">
+              <div class="footer-contacts__item"><a class="footer-contacts__link footer-contacts__link_xl" href="tel:8 (812) 660-56-82" title="заголовок H1">8 (812) 660-56-82</a><span class="footer-contacts__desc">Звонок по России бесплатный</span></div>
+              <div class="footer-contacts__item"><a class="footer-contacts__link footer-contacts__link_md" href="mailto: sales@galtsystems.com" title="заголовок H1">sales@galtsystems.com</a><span class="footer-contacts__desc">Единая почта по всем вопросам</span></div>
+              <div class="footer-contacts__item">
+                <div class="footer-contacts__link">г. Санкт-Петербург, Витебский пр., д. 11, лит. С, оф. 2006</div><span class="footer-contacts__desc">Режим работы: Пн - Пт. 9:00-19:00</span>
+              </div>
+              <div class="social"><a class="icon-social icon-social_vk social__icon" href="javascript:void(0);" title="заголовок H1">
+                  <svg class="icon-social__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_vk"></use>
+                  </svg></a><a class="icon-social icon-social_fb social__icon" href="javascript:void(0);" title="заголовок H1">
+                  <svg class="icon-social__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_facebook"></use>
+                  </svg></a><a class="icon-social icon-social_ytb social__icon" href="javascript:void(0);" title="заголовок H1">
+                  <svg class="icon-social__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_youtube"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-add"><a class="logo" href="/" title="заголовок H1"><img class="logo__img" src="/local/img/ico_logo-white.png"></a>
+          <p class="footer-add__item">© ООО «ГАЛТ СИСТЕМС». Все права защищены</p>
+          <p class="footer-add__item">2014-2020</p>
+        </div>
+        <div class="modal-overlay"></div>
+        <div class="filter modal modal_right modal_hidden" data-popup-modal="filter-rate">
+          <div class="filter__content modal__content">
+            <div class="filter__top"><a class="filter__link filter__action-link_return modal__close-link" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_arrow-left"></use>
+                  </svg>
+                </div><span class="filter__link-text">Все фильтры</span></a><a class="filter__link filter__action-link_close modal__close-link" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_cross"></use>
+                  </svg>
+                </div></a></div>
+            <div class="filter__main">
+              <div class="filter__title">Цена</div>
+              <form class="filter__range filter-range filter-form" data-filter="filter-range_rate">
+                <div class="filter-range__content"><span class="filter-range__text">от</span>
+                  <input class="filter-range__input filter-range__input_min" data-filter-min="filter-rate" min="0" max="150000" step="500" type="text"><span class="filter-range__text">₽</span>
+                </div>
+                <div class="filter-range__content"><span class="filter-range__text">до</span>
+                  <input class="filter-range__input filter-range__input_max" data-filter-max="filter-rate" min="0" max="150000" step="500" type="text"><span class="filter-range__text">₽</span>
+                </div>
+                <div class="filter__btns">
+                  <button class="button button_long filter__btn-reset" type="reset">Очистить фильтр</button>
+                  <button class="button button_long button_blue filter__btn-submit" type="submit">Применить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="filter modal modal_right modal_hidden" data-popup-modal="filter-config">
+          <div class="filter__content modal__content">
+            <div class="filter__top"><a class="filter__link filter__action-link_return modal__close-link" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_arrow-left"></use>
+                  </svg>
+                </div><span class="filter__link-text">Все фильтры</span></a><a class="filter__link filter__action-link_close modal__close-link" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_cross"></use>
+                  </svg>
+                </div></a></div>
+            <div class="filter__main">
+              <div class="filter__title">Конфигурация</div>
+              <form class="filter__choice filter-form" data-filter="filter-range_config">
+                <div class="input-filter">
+                  <input class="input-filter__input" type="checkbox" id="inputFilterConfig1">
+                  <label class="input-filter__label" for="inputFilterConfig1"><span class="input-filter__title">Web-сервер</span><span class="input-filter__checkmark fas fa-check"></span></label>
+                </div>
+                <div class="input-filter">
+                  <input class="input-filter__input" type="checkbox" id="inputFilterConfig3">
+                  <label class="input-filter__label" for="inputFilterConfig3"><span class="input-filter__title">Контроллер домена</span><span class="input-filter__checkmark fas fa-check"></span></label>
+                </div>
+                <div class="input-filter">
+                  <input class="input-filter__input" type="checkbox" id="inputFilterConfig4">
+                  <label class="input-filter__label" for="inputFilterConfig4"><span class="input-filter__title">Сервер мониторинга</span><span class="input-filter__checkmark fas fa-check"></span></label>
+                </div>
+                <div class="input-filter">
+                  <input class="input-filter__input" type="checkbox" id="inputFilterConfig5">
+                  <label class="input-filter__label" for="inputFilterConfig5"><span class="input-filter__title">Серверная виртуализация</span><span class="input-filter__checkmark fas fa-check"></span></label>
+                </div>
+                <div class="input-filter">
+                  <input class="input-filter__input" type="checkbox" id="inputFilterConfig6">
+                  <label class="input-filter__label" for="inputFilterConfig6"><span class="input-filter__title">Сервер видеонаблюдения</span><span class="input-filter__checkmark fas fa-check"></span></label>
+                </div>
+                <div class="input-filter">
+                  <input class="input-filter__input" type="checkbox" id="inputFilterConfig7">
+                  <label class="input-filter__label" for="inputFilterConfig7"><span class="input-filter__title">Сервер для 1С</span><span class="input-filter__checkmark fas fa-check"></span></label>
+                </div>
+                <div class="filter__btns">
+                  <button class="button button_long filter__btn-reset" type="reset">Очистить фильтр</button>
+                  <button class="button button_long button_blue filter__btn-submit" type="submit">Применить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="filter modal modal_right modal_hidden" data-popup-modal="filter-option">
+          <div class="filter__content modal__content">
+            <div class="filter__top"><a class="filter__link filter__action-link_return modal__close-link" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_arrow-left"></use>
+                  </svg>
+                </div><span class="filter__link-text">Все фильтры</span></a><a class="filter__link filter__action-link_close modal__close-link" href="#" title="заголовок H1">
+                <div class="icon icon_fill">
+                  <svg class="icon__svg">
+                    <use xlink:href="/local/img/icons/sprite.svg#ico_cross"></use>
+                  </svg>
+                </div></a></div>
+            <div class="filter__main">
+              <div class="filter__title">Состояние</div>
+              <form class="filter__range filter-range filter-form" data-filter="filter-range_option">
+                <div class="filter-range__content"><span class="filter-range__text">от</span>
+                  <input class="filter-range__input filter-range__input_min" data-filter-min="filter-option" min="0" max="45000" step="100" type="text"><span class="filter-range__text">₽</span>
+                </div>
+                <div class="filter-range__content"><span class="filter-range__text">до</span>
+                  <input class="filter-range__input filter-range__input_max" data-filter-max="filter-option" min="0" max="45000" step="100" type="text"><span class="filter-range__text">₽</span>
+                </div>
+                <div class="filter__btns">
+                  <button class="button button_long filter__btn-reset" type="reset">Очистить фильтр</button>
+                  <button class="button button_long button_blue filter__btn-submit" type="submit">Применить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="filter-total filter-total_hidden">
+          <div class="filter-total__content">
+            <div class="filter-total__title">
+              <div class="filter-total__text">Применённые фильтры</div><a class="filter-total__open-link" href="#" title="заголовок H1"><span class="filter-total__open-link-text">Развернуть</span><span class="fas fa-angle-up filter-total__icon"></span></a>
+            </div>
+            <ul class="filter-total__list filter-total__list_hidden">
+              <li class="filter-total__item">
+                <div class="filter-total__item-title">Цена</div>
+                <ul class="filter-total__subitems">
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">5 300 ₽ — 9000  ₽</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-total__item">
+                <div class="filter-total__item-title">Конфигурация</div>
+                <ul class="filter-total__subitems">
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">Web-сервер</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">Брандмауэр</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-total__item">
+                <div class="filter-total__item-title">Состояние</div>
+                <ul class="filter-total__subitems">
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">Новый</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-total__item">
+                <div class="filter-total__item-title">Производитель</div>
+                <ul class="filter-total__subitems">
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">ASUS</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">Intel</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="filter-total__item">
+                <div class="filter-total__item-title">Высота в юнитах</div>
+                <ul class="filter-total__subitems">
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">1U</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                  <li class="filter-total__subitem">
+                    <div class="filter-total__item-desc">2U</div><a class="filter-total__item-remove" href="#" title="заголовок H1"><span class="fas fa-times filter-total__icon"></span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/local/js/languages/languages.js"></script>
+    <script src="/local/js/modal/modal.js"></script>
+    <script src="/local/js/menu-full/menu-full.js"></script>
+    <script src="/local/js/input-view/input-view.js"></script>
+    <script src="/local/js/drop-down/drop-down.js"></script>
+    <script src="/local/js/input-compare/input-compare.js"></script>
+    <script src="/local/js/vendor/nouislider.min.js"></script>
+    <script src="/local/js/filter-range/filter-range.js"></script>
+    <script src="/local/js/filter-total/filter-total.js"></script>
+  </body>
+</html>
