@@ -1,0 +1,90 @@
+mixin img(src, width, height, title)
+	//- attributes == {class: "btn"}
+	img(src=src width=width height=height title=title)
+
+mixin link-with-img (href, className, src, width, height, title)
+	a(href=href class=className)
+		img(src=src width=width height=height title=title)
+
+mixin link(href, className, name)
+	a(class=className href=href)= name
+
+mixin link-with-span(href, className, name)
+	a(class=className href=href)
+		span= name
+
+mixin btn-link(href, className, count)
+	.btn
+		a(href=href class=className data-count=count)
+
+mixin list-item(name, href)
+	li
+		a(href=href)= name
+
+mixin list-item-img(href, src, width, height, alt)
+	li
+		a(href=href)
+			img(src=src width=width height=height alt=alt)
+
+mixin list-item__sub(name, href, className)
+	li
+		a(href=href class='menu-main__sub-link')
+			span=name
+		div(class='menu-main__sub' class=className)
+			ul.menu-main__sub-list
+				block
+
+mixin input(idName, value, type, name, required, placeholder, readonly)
+	.label-content
+		label(for=idName)
+			input(id=idName value=value type=type name=name required=required placeholder=placeholder readonly=readonly)
+
+mixin fieldset-group(className)
+	fieldset(class=className)
+		.fieldset-group-wrapper
+			block
+
+mixin input__checkbox(idName, name, value, Title)
+	.checkbox-wrapper
+		input(type="checkbox" id=idName name=name value=value)
+		label(for=idName)
+			span=Title
+
+mixin input__checkbox-rich(idName, name, value, Title, Desc)
+	.checkbox-wrapper
+		input(type="checkbox" id=idName name=name value=value)
+		label(for=idName)
+			span=Title
+		span.checkbox-desc=Desc
+
+mixin input__radio(idName, name, value, Title, checked)
+	.radio-wrapper
+		input(type="radio" id=idName name=name value=value checked=checked)
+		label(for=idName)
+			span=Title
+
+mixin toggle(idName, Title, checked)
+	.toggle-btn
+		input(type="checkbox"  id=idName checked=checked)
+		label(for=idName)
+			span=Title
+
+mixin dropdown-option (Title, idName, value)
+	li
+		.dropdown__option
+			.title=Title
+			.counter
+				span.noselect.counter__btn.minus -
+				.noselect.counter-quantity
+					input(type="number" id=idName name="quantity" value=value)
+					label(for=idName)
+						span=value
+				span.noselect.counter__btn.plus +
+
+mixin img-with-text (className, src, width, height, title, Title, Desc)
+	.img-with-text(class=className)
+		.img-wrapper
+			img(src=src width=width height=height title=title)
+		.desc-wrapper
+			.title=Title
+			.desc=Desc

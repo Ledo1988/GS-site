@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEC,6BAAO;EACN,SAAS,EAAE,aAAa;;ACD1B,uBAAuB;EACtB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,CAAC;EACR,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,yCAAyC;EAC3D,eAAe,EAAE,OAAO;EACxB,mBAAmB,EAAE,MAAM;EAC3B,iBAAiB,EAAE,SAAS",
+"sources": ["_rotate/drop-down__result_open.sass","drop-down__result-icon.sass"],
+"names": [],
+"file": "drop-down__result-icon.css"
+}

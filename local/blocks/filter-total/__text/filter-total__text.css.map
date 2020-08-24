@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,mBAAmB;EAClB,SAAS,EAAE,IAAI",
+"sources": ["filter-total__text.sass"],
+"names": [],
+"file": "filter-total__text.css"
+}

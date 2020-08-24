@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACT,KAAK,EAAE,IAAI",
+"sources": ["menu-full.sass"],
+"names": [],
+"file": "menu-full.css"
+}

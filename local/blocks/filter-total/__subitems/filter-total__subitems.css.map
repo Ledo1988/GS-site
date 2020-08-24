@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,uBAAuB;EACtB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,UAAU",
+"sources": ["filter-total__subitems.sass"],
+"names": [],
+"file": "filter-total__subitems.css"
+}

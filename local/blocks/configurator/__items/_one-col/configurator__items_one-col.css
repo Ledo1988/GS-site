@@ -1,0 +1,7 @@
+.configurator__items_two-cols {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  height: fit-content; }
+
+/*# sourceMappingURL=configurator__items_one-col.css.map */

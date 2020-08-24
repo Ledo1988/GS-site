@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,0BAA0B;EACzB,SAAS,EAAE,CAAC",
+"sources": ["configurator__hot-options.sass"],
+"names": [],
+"file": "configurator__hot-options.css"
+}

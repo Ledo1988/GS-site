@@ -1,0 +1,224 @@
+//Fast-fix
+label,
+button,
+input,
+textarea 
+	font-family: $font-primary
+	font-size: 14px
+	letter-spacing: 0.18px
+	color: $color-primary
+	background: none
+	border: 0
+	padding: 0
+	-webkit-appearance: none
+	-webkit-user-select: none /* for button */
+	-moz-user-select: none
+	-ms-user-select: none
+	outline: none
+	cursor: pointer
+
+	&:hover, &:focus 
+		outline: none
+	
+
+
+input:-webkit-autofill 
+	background-color: $color-white !important
+
+
+input::-moz-focus-inner,
+button::-moz-focus-inner 
+	border: 0
+	padding: 0
+
+
+textarea 
+	resize: none
+
+
+input[type='checkbox'] 
+	-webkit-appearance: checkbox
+
+
+input,
+textarea 
+	font: 14px $font-primary
+	color: $color-primary
+
+	&::placeholder 
+		font: 14px $font-primary
+		color: $color-black
+	
+
+
+button,
+button[disabled] 
+	cursor: default
+
+
+label 
+	position: relative
+	display: block
+
+
+//Fast-fix ENDs
+.input-filter
+	position: relative
+	max-width: 300px
+	margin-bottom: 10px
+
+	&__label
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 12px 14px
+		border: 1px solid $color-mercury
+		background-color: $color-white
+		border-radius: 4px
+		font-weight: 600
+		font-size: 14px
+		color: $color-black
+		cursor: pointer
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		transition: $transition
+
+	&:hover, &:focus
+		.input-filter__label
+			background-color: $color-athensGray
+
+	&__input
+		position: absolute
+		opacity: 0
+		cursor: pointer
+		height: 0
+		width: 0
+
+		&:checked ~ .input-filter__label
+			color: $color-blue
+			background-color: $color-athensGray
+
+			.input-filter__svg
+				fill: $color-blue
+
+	&__svg
+		width: 8px
+		height: 12px
+		fill: $color-black
+		transition: $transition
+				
+
+
+.input-choice
+	position: relative
+	display: inline-block
+
+	&__label
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		padding: 12px 23px
+		max-height: 40px
+		border: 1px solid $color-mercury
+		background-color: $color-white
+		border-radius: 4px
+		font-weight: 500
+		font-size: 14px
+		color: $color-black
+		text-transform: uppercase
+		cursor: pointer
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+
+	&:hover, &:focus
+		.input-choice__label
+			background-color: $color-athensGray
+
+	&__input
+		position: absolute
+		opacity: 0
+		cursor: pointer
+		height: 0
+		width: 0
+
+		&:checked ~ .input-choice__label
+			padding: 12px 14px
+
+			.input-choice__checkmark
+				margin-right: 3px
+				width: auto
+				height: auto
+				opacity: 1
+
+	&__checkmark
+		width: 0
+		height: 0
+		opacity: 0
+		color: $color-green
+	
+	&__svg
+		width: 15px
+		height: 15px
+		fill: $color-green
+		transition: $transition
+		
+.input-compare
+	position: relative
+	display: inline-block
+	
+	&__label
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		font-weight: 500
+		font-size: 14px
+		color: $color-blue
+		cursor: pointer
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		transition: $transition
+		
+	&__item
+		position: absolute
+		opacity: 0
+		cursor: pointer
+		height: 0
+		width: 0
+		
+		&:checked ~ .input-compare__label
+			color: $color-black
+			
+		&:checked ~ .input-compare__label .input-compare__icon
+			color: $color-green
+			
+	&__icon
+		color: $color-blue
+		margin-right: 7px
+		transition: $transition
+
+input
+
+	&::placeholder 
+		color: $color-primary
+	
+
+	&:active, &:focus, &:hover 
+		outline: none
+	
+
+	&::-ms-clear 
+		display: none
+	
+
+
+textarea
+
+	&::placeholder 
+		color: $color-primary
+	

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAkB;EACjB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,UAAU",
+"sources": ["menu-full__header.sass"],
+"names": [],
+"file": "menu-full__header.css"
+}

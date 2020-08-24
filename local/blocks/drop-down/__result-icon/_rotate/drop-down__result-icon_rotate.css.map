@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,8BAA8B;EAC7B,SAAS,EAAE,aAAa",
+"sources": ["drop-down__result-icon_rotate.sass"],
+"names": [],
+"file": "drop-down__result-icon_rotate.css"
+}

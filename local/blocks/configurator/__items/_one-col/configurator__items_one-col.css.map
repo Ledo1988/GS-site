@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,6BAA6B;EAC5B,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,SAAS;EAChC,QAAQ,EAAE,IAAI;EACd,MAAM,EAAE,WAAW",
+"sources": ["configurator__items_one-col.sass"],
+"names": [],
+"file": "configurator__items_one-col.css"
+}

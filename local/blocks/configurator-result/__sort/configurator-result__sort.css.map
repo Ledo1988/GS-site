@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,0BAA0B;EACzB,SAAS,EAAE,CAAC",
+"sources": ["configurator-result__sort.sass"],
+"names": [],
+"file": "configurator-result__sort.css"
+}
