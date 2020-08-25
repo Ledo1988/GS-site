@@ -5115,7 +5115,7 @@ textarea::placeholder {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  transition: 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   cursor: pointer; }
   @media (max-width: 1024px) {
     .button {
@@ -5143,6 +5143,14 @@ textarea::placeholder {
     .button_red:hover, .button_red:focus {
       border-color: #EA523A;
       background-color: #EA523A;
+      color: #ffffff; }
+  .button_red-border {
+    background-color: #FFF6F4;
+    color: #1C1C1C;
+    border-color: #F15C45; }
+    .button_red-border:hover, .button_red-border:focus {
+      border-color: #F15C45;
+      background-color: #F15C45;
       color: #ffffff; }
   .button_icon {
     padding-top: 13px;

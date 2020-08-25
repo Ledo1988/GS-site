@@ -4,3 +4,23 @@
 	margin-left: $grid-unit*2
 	margin-right: 17px
 	min-width: 0
+	
+	&_conf
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-left: 0
+		flex-grow: 1
+		max-width: 260px
+		
+		.button__svg
+			position: relative
+			top: -5px
+			width: 16px
+			height: 16px
+			fill: $color-red
+			
+		&:hover
+			.button__svg
+				fill: $color-white
+	

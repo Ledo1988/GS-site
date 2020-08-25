@@ -5116,7 +5116,7 @@ textarea::placeholder {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  transition: 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   cursor: pointer; }
   @media (max-width: 1024px) {
     .button {
@@ -5144,6 +5144,14 @@ textarea::placeholder {
     .button_red:hover, .button_red:focus {
       border-color: #EA523A;
       background-color: #EA523A;
+      color: #ffffff; }
+  .button_red-border {
+    background-color: #FFF6F4;
+    color: #1C1C1C;
+    border-color: #F15C45; }
+    .button_red-border:hover, .button_red-border:focus {
+      border-color: #F15C45;
+      background-color: #F15C45;
       color: #ffffff; }
   .button_icon {
     padding-top: 13px;
@@ -6123,20 +6131,38 @@ textarea::placeholder {
   .configurator__items_one-col .configurator__item-img {
     width: 280px;
     max-height: 180px; }
+  .configurator__items_one-col .configurator__item-rate {
+    margin-bottom: 12px; }
+    .configurator__items_one-col .configurator__item-rate_two {
+      display: block; }
+      .configurator__items_one-col .configurator__item-rate_two .configurator__item-rate-old {
+        margin-left: 0;
+        margin-top: 5px;
+        margin-bottom: 10px; }
   .configurator__items_one-col .input-compare {
     width: 100%;
     margin-top: 13px; }
   .configurator__items_one-col .configurator__item-buy {
     flex-wrap: wrap;
     grid-area: buy; }
+    .configurator__items_one-col .configurator__item-buy_conf {
+      display: block; }
+      .configurator__items_one-col .configurator__item-buy_conf .configurator__item-buy-text {
+        width: 100%;
+        margin-bottom: 40px; }
+      .configurator__items_one-col .configurator__item-buy_conf .input-compare {
+        width: 100%; }
+      .configurator__items_one-col .configurator__item-buy_conf .input-compare__label {
+        justify-content: flex-start; }
   .configurator__items_one-col .configurator__item-buy-btn {
     margin-right: 0;
     flex-grow: 1; }
+    .configurator__items_one-col .configurator__item-buy-btn_conf {
+      max-width: 100%; }
 
 .configurator__item {
   padding: 15px;
-  border: 1px solid #E1E1E1;
-  transition: 0.2s ease-in-out; }
+  border: 1px solid #E1E1E1; }
 
 .hot-options__icon {
   color: #FAC42A; }
@@ -6196,10 +6222,12 @@ textarea::placeholder {
 .configurator__item-rate {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 26px;
   color: #1C1C1C;
   font-weight: 700; }
+  .configurator__item-rate_conf {
+    margin-bottom: 30px; }
 
 .configurator__item-rate_new {
   color: #FF573D; }
@@ -6228,6 +6256,13 @@ textarea::placeholder {
       flex-wrap: wrap; }
       .configurator__item-buy .input-compare {
         margin-top: 10px; } }
+  .configurator__item-buy_conf {
+    align-items: flex-end;
+    flex-wrap: wrap; }
+    .configurator__item-buy_conf .input-compare {
+      width: 50%; }
+    .configurator__item-buy_conf .input-compare__label {
+      justify-content: flex-end; }
 
 .configurator__item-buy-btn {
   padding: 11px 30px;
@@ -6235,6 +6270,21 @@ textarea::placeholder {
   margin-left: 10px;
   margin-right: 17px;
   min-width: 0; }
+  .configurator__item-buy-btn_conf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    flex-grow: 1;
+    max-width: 260px; }
+    .configurator__item-buy-btn_conf .button__svg {
+      position: relative;
+      top: -5px;
+      width: 16px;
+      height: 16px;
+      fill: #F15C45; }
+    .configurator__item-buy-btn_conf:hover .button__svg {
+      fill: #ffffff; }
 
 .configurator__hot-options {
   flex-grow: 1; }

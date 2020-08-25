@@ -1,0 +1,280 @@
+.configurator
+    .configurator__main
+        include ../../blocks/producer-list/producer-list
+        include ../../blocks/configurator-result/configurator-result
+    include ../../blocks/promo/promo
+    .configurator__items-content
+        .configurator__items.configurator__items_one-col
+            .configurator__item
+                .configurator__hot-options
+                    include ../hot-options/hot-options
+                a.configurator__item-link(href="#" title="заголовок H1")
+                    img.configurator__item-img(src="/local/img/img_configurator-1.png")
+                .configurator__item-main
+                    a.configurator__item-link(href="#" title="заголовок H1")
+                        .configurator__item-title Hewlett-Packard HP BL460cG8
+                    ul.configurator__item-options
+                        li.configurator__item-option
+                            span.configurator__item-option-title Socket:
+                            |  LGA2011
+                        li.configurator__item-option
+                            span.configurator__item-option-title RAM:
+                            |  16 x DDR4
+                        li.configurator__item-option
+                            span.configurator__item-option-title CPU:
+                            |  2 x Intel Xeon e5-24xx v1/v2
+                        li.configurator__item-option
+                            span.configurator__item-option-title HDD:
+                            |  Сервер HP DL380P GEN8
+                .configurator__item-offer
+                    .configurator__item-rate.configurator__item-rate_new.configurator__item-rate_conf.configurator__item-rate_two 146 100 000 ₽
+                        span.configurator__item-rate-old 156 100 000 ₽
+                    .configurator__item-buy.configurator__item-buy_conf
+                        a.button.button_long.button_red-border.configurator__item-buy-btn.configurator__item-buy-btn_conf(href='javascript:void(0);')
+                            svg.button__svg
+                                use(xlink:href="/local/img/icons/sprite.svg#ico_attention" title="заголовок H1")
+                            | В конфигуратор
+                        .configurator__item-buy-text Данный товар доступен только в составе конфигурации
+                        .input-compare
+                            input(class="input-compare__item" type="checkbox" id="inputCompare")
+                            label(class="input-compare__label" for="inputCompare")
+                                span.input-compare__icon.fas.fa-list-ul
+                                span.input-compare__title Добавить в сравнение
+            .configurator__item
+                .configurator__hot-options
+                    include ../hot-options/hot-options
+                a.configurator__item-link(href="#" title="заголовок H1")
+                    img.configurator__item-img(src="/local/img/img_configurator-2.png")
+                .configurator__item-main
+                    a.configurator__item-link(href="#" title="заголовок H1")
+                        .configurator__item-title Hewlett-Packard HP BL460cG8 Intel Xeon E5-26XX/E5-26XXV2
+                    ul.configurator__item-options
+                        li.configurator__item-option
+                            span.configurator__item-option-title Socket:
+                            |  LGA2011
+                        li.configurator__item-option
+                            span.configurator__item-option-title RAM:
+                            |  16 x DDR4
+                        li.configurator__item-option
+                            span.configurator__item-option-title CPU:
+                            |  2 x Intel Xeon e5-24xx v1/v2
+                        li.configurator__item-option
+                            span.configurator__item-option-title HDD:
+                            |  Сервер HP DL380P GEN8
+                .configurator__item-offer
+                    .configurator__item-rate 146 100 000 ₽
+                    .configurator__item-delivery
+                        span.configurator__item-delivery-icon.fas.fa-truck
+                        | 2 дня, бесплатно
+                    .configarator__item-quantity
+                        include ../counter/counter
+                        .configarator__item-quantity-max Max кол-во
+                            span.configarator__item-quantity-amount (10 шт)
+                    .configurator__item-buy
+                        a.button.button_red.button_icon-sm(href='javascript:void(0);' title="заголовок H1")
+                            svg.button__svg
+                                use(xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1")
+                        a.button.button_long.button_blue.configurator__item-buy-btn(href='javascript:void(0);') Получить кп
+                        .input-compare
+                            input(class="input-compare__item" type="checkbox" id="inputCompare2")
+                            label(class="input-compare__label" for="inputCompare2")
+                                span.input-compare__icon.fas.fa-list-ul
+                                span.input-compare__title Добавить в сравнение
+            .configurator__item
+                .configurator__hot-options
+                    include ../hot-options/hot-options
+                a.configurator__item-link(href="#" title="заголовок H1")
+                    img.configurator__item-img(src="/local/img/img_configurator-1.png")
+                .configurator__item-main
+                    a.configurator__item-link(href="#" title="заголовок H1")
+                        .configurator__item-title Hewlett-Packard HP BL460cG8
+                    ul.configurator__item-options
+                        li.configurator__item-option
+                            span.configurator__item-option-title Socket:
+                            |  LGA2011
+                        li.configurator__item-option
+                            span.configurator__item-option-title RAM:
+                            |  16 x DDR4
+                        li.configurator__item-option
+                            span.configurator__item-option-title CPU:
+                            |  2 x Intel Xeon e5-24xx v1/v2
+                        li.configurator__item-option
+                            span.configurator__item-option-title HDD:
+                            |  Сервер HP DL380P GEN8
+                .configurator__item-offer
+                    .configurator__item-rate.configurator__item-rate_new.configurator__item-rate_two 146 100 000 ₽
+                        span.configurator__item-rate-old 156 100 000 ₽
+                    .configurator__item-delivery
+                        span.configurator__item-delivery-icon.fas.fa-truck
+                        | 2 дня, бесплатно
+                    .configarator__item-quantity
+                        include ../counter/counter
+                        .configarator__item-quantity-max Max кол-во
+                            span.configarator__item-quantity-amount (10 шт)
+                    .configurator__item-buy
+                        a.button.button_red.button_icon-sm(href='javascript:void(0);' title="заголовок H1")
+                            svg.button__svg
+                                use(xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1")
+                        a.button.button_long.button_blue.configurator__item-buy-btn(href='javascript:void(0);') Получить кп
+                        .input-compare
+                            input(class="input-compare__item" type="checkbox" id="inputCompare3")
+                            label(class="input-compare__label" for="inputCompare3")
+                                span.input-compare__icon.fas.fa-list-ul
+                                span.input-compare__title Добавить в сравнение
+            .configurator__item
+                .configurator__hot-options
+                    include ../hot-options/hot-options
+                a.configurator__item-link(href="#" title="заголовок H1")
+                    img.configurator__item-img(src="/local/img/img_configurator-2.png")
+                .configurator__item-main
+                    a.configurator__item-link(href="#" title="заголовок H1")
+                        .configurator__item-title Hewlett-Packard HP BL460cG8 Intel Xeon E5-26XX/E5-26XXV2
+                    ul.configurator__item-options
+                        li.configurator__item-option
+                            span.configurator__item-option-title Socket:
+                            |  LGA2011
+                        li.configurator__item-option
+                            span.configurator__item-option-title RAM:
+                            |  16 x DDR4
+                        li.configurator__item-option
+                            span.configurator__item-option-title CPU:
+                            |  2 x Intel Xeon e5-24xx v1/v2
+                        li.configurator__item-option
+                            span.configurator__item-option-title HDD:
+                            |  Сервер HP DL380P GEN8
+                .configurator__item-offer
+                    .configurator__item-rate 146 100 000 ₽
+                    .configurator__item-delivery
+                        span.configurator__item-delivery-icon.fas.fa-truck
+                        | 2 дня, бесплатно
+                    .configarator__item-quantity
+                        include ../counter/counter
+                        .configarator__item-quantity-max Max кол-во
+                            span.configarator__item-quantity-amount (10 шт)
+                    .configurator__item-buy
+                        a.button.button_red.button_icon-sm(href='javascript:void(0);' title="заголовок H1")
+                            svg.button__svg
+                                use(xlink:href="/local/img/icons/sprite.svg#ico_cart" title="заголовок H1")
+                        a.button.button_long.button_blue.configurator__item-buy-btn(href='javascript:void(0);') Получить кп
+                        .input-compare
+                            input(class="input-compare__item" type="checkbox" id="inputCompare4")
+                            label(class="input-compare__label" for="inputCompare4")
+                                span.input-compare__icon.fas.fa-list-ul
+                                span.input-compare__title Добавить в сравнение
+        button.configurator__btn-show-more.button.button_long(type="button") Показать ещё
+        .configurator__pagination
+            include ../../blocks/pagination/pagination
+    .configurator__filter
+        form.configurator__form(name="configurator-filter")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterRate").modal__open-link(data-popup-trigger="filter-rate")
+                label.input-filter__label(for="inputFilterRate")
+                    span.input-filter__title Цена
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterConfig").modal__open-link(data-popup-trigger="filter-config")
+                label.input-filter__label(for="inputFilterConfig")
+                    span.input-filter__title Конфигурация
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterCondition").modal__open-link(data-popup-trigger="filter-option")
+                label.input-filter__label(for="inputFilterCondition")
+                    span.input-filter__title Состояние
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterProducer")
+                label.input-filter__label(for="inputFilterProducer")
+                    span.input-filter__title Производитель
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterHeight")
+                label.input-filter__label(for="inputFilterHeight")
+                    span.input-filter__title Высота в юнитах
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterDisk")
+                label.input-filter__label(for="inputFilterDisk")
+                    span.input-filter__title Кол-во жёстких дисков
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterSocket")
+                label.input-filter__label(for="inputFilterSocket")
+                    span.input-filter__title Socket
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterProc")
+                label.input-filter__label(for="inputFilterProc")
+                    span.input-filter__title Семейство процессоров
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterProcDev")
+                label.input-filter__label(for="inputFilterProcDev")
+                    span.input-filter__title Производитель процессора
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterSlots")
+                label.input-filter__label(for="inputFilterSlots")
+                    span.input-filter__title Количество слотов памяти
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterMemory")
+                label.input-filter__label(for="inputFilterMemory")
+                    span.input-filter__title Объём памяти
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterType")
+                label.input-filter__label(for="inputFilterType")
+                    span.input-filter__title Тип сетевых портов
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterBox")
+                label.input-filter__label(for="inputFilterBox")
+                    span.input-filter__title Тип корпуса
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterBlocks")
+                label.input-filter__label(for="inputFilterBlocks")
+                    span.input-filter__title Количество блоков питания
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterPower")
+                label.input-filter__label(for="inputFilterPower")
+                    span.input-filter__title Мощность блоков питания
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
+            .input-filter
+                input.input-filter__input(type="checkbox" id="inputFilterRaid")
+                label.input-filter__label(for="inputFilterRaid")
+                    span.input-filter__title RAID контроллер
+                    span.input-filter__checkmark
+                        svg.input-filter__svg
+                            use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")

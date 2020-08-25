@@ -32,6 +32,17 @@
 	.configurator__item-img
 		width: 280px
 		max-height: 180px
+		
+	.configurator__item-rate
+		margin-bottom: 12px
+		
+		&_two
+			display: block
+			
+			.configurator__item-rate-old
+				margin-left: 0
+				margin-top: $grid-unit
+				margin-bottom: $grid-unit*2
 	
 	.input-compare
 		width: 100%
@@ -41,6 +52,24 @@
 		flex-wrap: wrap
 		grid-area: buy
 		
+		&_conf
+			display: block
+			
+			.configurator__item-buy-text
+				width: 100%
+				margin-bottom: $grid-unit*8
+			
+			.input-compare
+				width: 100%
+			
+			.input-compare__label
+				justify-content: flex-start
+				
 	.configurator__item-buy-btn
 		margin-right: 0
 		flex-grow: 1
+		
+		&_conf
+			max-width: 100%
+			
+			
