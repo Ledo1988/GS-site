@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAiB;EAChB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,OAAO",
+"sources": ["checkbox__input.sass"],
+"names": [],
+"file": "checkbox__input.css"
+}

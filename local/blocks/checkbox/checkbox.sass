@@ -1,0 +1,33 @@
+@import "__checkmark/checkbox__checkmark"
+@import "__input/checkbox__input"
+
+.checkbox
+	display: block
+	position: relative
+	padding-left: 35px
+	margin-bottom: 12px
+	cursor: pointer
+	font-size: 22px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	
+	&:hover .checkbox__input ~ .checkbox__checkmark
+		border-color: $color-blue
+		
+	.checkbox__input:checked ~ .checkbox__checkmark:after
+		display: block
+		
+	.checkbox__checkmark:after
+		font-family: "Font Awesome 5 Free"
+		font-weight: 900
+		content: "\f00c"
+		color: $color-white
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		padding: 4px
+		font-size: 12px
+		background: $color-blue

@@ -1,2 +1,19 @@
 .catalog-detailed__slider
 	margin-bottom: $grid-unit*4
+	
+	.slider__button
+		
+		&_prev
+			transform: rotate(90deg)
+		
+		&_next
+			transform: rotate(-90deg)
+	
+		.icon__svg
+			height: 16px
+		
+		.icon_fill:hover,
+		.icon_fill:focus
+			
+			.icon__svg
+				fill: $color-blue

@@ -12,9 +12,13 @@
                     img(src="local/img/img_slider-thumb-3.png")
 
         .slider__button.slider__button_next
-            span.fas.fa-angle-up
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
         .slider__button.slider__button_prev
-            span.fas.fa-angle-down
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_arrow")
         .slider__gallery.swiper-container
             .swiper-wrapper
                 .swiper-slide

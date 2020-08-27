@@ -36,7 +36,10 @@ function bodyPageCheck(event) {
         menuFullCloseAction();
     }
 
-    filterTotalCheck();
+    if (document.querySelector('.filter-total')) {
+        filterTotalCheck();
+    }
+
 
 
 

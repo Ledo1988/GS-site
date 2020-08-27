@@ -1,0 +1,28 @@
+@import "__checkmark/radio-dot__checkmark"
+@import "__input/radio-dot__input"
+
+.radio-dot
+	display: block
+	position: relative
+	padding-left: 35px
+	margin-bottom: 12px
+	cursor: pointer
+	font-size: 22px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	
+	&:hover .radio-dot__input ~ .radio-dot__checkmark
+		border-color: $color-blue
+		
+	.radio-dot__input:checked ~ .radio-dot__checkmark:after
+		display: block
+		
+	.radio-dot__checkmark:after
+		top: 4px
+		left: 4px
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background: $color-blue
