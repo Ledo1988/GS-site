@@ -1,0 +1,36 @@
+.catalog-detailed__config-item
+	padding-left: $grid-unit*7
+	padding-bottom: $grid-unit*3
+	position: relative
+	
+	&::before
+		content: ''
+		display: block
+		width: 11px
+		height: 11px
+		position: absolute
+		top: 0
+		left: 0
+		border-radius: 100%
+		background-color: $color-mercury
+		z-index: 1
+		
+	&:first-of-type
+		&::before
+			background-color: $color-blue
+			
+	&::after
+		content: ''
+		display: block
+		width: 1px
+		height: 100%
+		position: absolute
+		top: 0
+		left: 5px
+		background-color: $color-mercury
+		
+	&:last-of-type
+		&::after
+			display: none
+		
+		
