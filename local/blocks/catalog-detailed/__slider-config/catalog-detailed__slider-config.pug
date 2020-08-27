@@ -1,0 +1,54 @@
+.catalog-detailed__slider-config
+    .catalog-detailed__slider-config-content
+        h2.catalog-detailed__title
+            | Сконфигурировать по назначению
+        .catalog-detailed__hint.hint
+            span.fas.fa-question-circle.hint__ico
+            .hint__desc Много много важной информации для пользователя
+    .catalog-detailed__slider-config-wrap
+        .slider-config.swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    .input-choice
+                        input.input-choice__input(type="radio" name="config" id="inputChoiceBase" checked)
+                        label.input-choice__label(for="inputChoiceBase")
+                            span.input-choice__checkmark
+                                svg.input-choice__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_checkmark")
+                            span.input-choice__title Базовый
+                .swiper-slide
+                    .input-choice
+                        input.input-choice__input(type="radio" name="config" id="inputChoiceBase2")
+                        label.input-choice__label(for="inputChoiceBase2")
+                            span.input-choice__checkmark
+                                svg.input-choice__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_checkmark")
+                            span.input-choice__title Web-сервер
+                .swiper-slide
+                    .input-choice
+                        input.input-choice__input(type="radio" name="config" id="inputChoiceBase3")
+                        label.input-choice__label(for="inputChoiceBase3")
+                            span.input-choice__checkmark
+                                svg.input-choice__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_checkmark")
+                            span.input-choice__title Брандмауэр
+                .swiper-slide
+                    .input-choice
+                        input.input-choice__input(type="radio" name="config" id="inputChoiceBase4")
+                        label.input-choice__label(for="inputChoiceBase4")
+                            span.input-choice__checkmark
+                                svg.input-choice__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_checkmark")
+                            span.input-choice__title Контроллер домена
+                .swiper-slide
+                    .input-choice
+                        input.input-choice__input(type="radio" name="config" id="inputChoiceBase5")
+                        label.input-choice__label(for="inputChoiceBase5")
+                            span.input-choice__checkmark
+                                svg.input-choice__svg
+                                    use(xlink:href="/local/img/icons/sprite.svg#ico_checkmark")
+                            span.input-choice__title Вариант
+        .slider-config__button.slider-config__button_next
+            span.fas.fa-angle-right
+        .slider-config__button.slider-config__button_prev
+            span.fas.fa-angle-left
