@@ -1,0 +1,17 @@
+.catalog-detailed__save
+    h2.catalog-detailed__save-title Сохранить конфигурацию
+    .catalog-detailed__save-content
+        form.catalog-detailed__save-form(method="POST" action="/")
+            input.catalog-detailed__save-input(type="email" placeholder="Введите e-mail")
+            button.catalog-detailed__save-submit.button.button_grey(type="submit") Отправить
+        .catalog-detailed__save-add
+            a.catalog-detailed__save-link(href='javascript:void(0);' title="заголовок H1")
+                .icon.icon_fill
+                    svg.icon__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_pdf")
+                .catalog-detailed__save-link-desk В формате PDF
+            a.catalog-detailed__save-link(href='javascript:void(0);' title="заголовок H1")
+                .icon.icon_stroke
+                    svg.icon__svg
+                        use(xlink:href="/local/img/icons/sprite.svg#ico_person-2")
+                .catalog-detailed__save-link-desk В личный кабинет

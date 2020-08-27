@@ -4907,13 +4907,20 @@ p {
   margin: 0;
   margin-bottom: 5px;
   line-height: 130%; }
-  p:last-of-type {
-    margin-bottom: 0; }
 
 a {
   color: #8F8F8F;
   text-decoration: none;
   transition: 0.2s ease-in-out; }
+
+.link-blue {
+  color: #215294; }
+  .link-blue_border {
+    display: inline-block;
+    border-bottom: 1px solid #215294;
+    transition: 0.2s ease-in-out; }
+    .link-blue_border:hover {
+      border-bottom: 1px solid #ffffff; }
 
 .strong {
   font-weight: 700; }
@@ -5154,6 +5161,14 @@ textarea::placeholder {
       border-color: #F15C45;
       background-color: #F15C45;
       color: #ffffff; }
+  .button_grey {
+    background-color: #EAEAEA;
+    border: 1px solid #E1E1E1;
+    color: #1C1C1C; }
+    .button_grey:hover, .button_grey:focus {
+      background-color: #EFF0F4;
+      color: #1C1C1C;
+      border: 1px solid #E1E1E1; }
   .button_icon {
     padding-top: 13px;
     padding-bottom: 12px; }

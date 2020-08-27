@@ -35,17 +35,24 @@ p
     margin: 0
     margin-bottom: $grid-unit
     line-height: 130%
-
-    &:last-of-type 
-        margin-bottom: 0
-    
-
-
+	
 a 
     color: $color-primary
     text-decoration: none
     transition: $transition
+	
+.link-blue
+    color: $color-blue
+	
+    &_border
+        display: inline-block
+        border-bottom: 1px solid $color-blue
+        transition: $transition
+		
+        &:hover
+            border-bottom: 1px solid $color-white
 
-
+	
+			
 .strong 
     font-weight: 700

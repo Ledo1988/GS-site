@@ -1,0 +1,14 @@
+.catalog-detailed__main-add-link-desc
+	display: inline-block
+	margin-left: $grid-unit
+	border-bottom: 1px solid $color-blue
+	transition: $transition
+	
+	&.input-compare__title
+		margin-left: 0
+	
+	&:hover
+		border-color: transparent
+		
+.input-compare__item:checked ~ .input-compare__label .catalog-detailed__main-add-link-desc
+	color: $color-blue
