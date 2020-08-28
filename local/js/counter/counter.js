@@ -1,17 +1,19 @@
 let counterInput = document.querySelectorAll('.counter__input');
 let counterBtn = document.querySelectorAll('.counter__btn');
-let counterIndex = 0;
 
-counterBtn.forEach(item => {item.addEventListener('click', () => { checkCount(item) }) });
+counterBtn.forEach(item => {item.addEventListener('click', (event) => { checkCount(event) }) });
+counterInput.forEach(trigger => trigger.addEventListener('input', (event) => {counterTextCheck(event)},));
 
-counterInput.forEach(trigger => trigger.addEventListener('input', () => {counterTextCheck(this)},));
+function checkCount(event) {
+    event.preventDefault();
 
-function checkCount(button) {
-
+    const button = event.target.closest('.counter__btn');
+    const input =  event.target.closest('.counter').querySelector('.counter__input');
+    let counterIndex = parseInt(input.value, 10);
 
     if (button.dataset.count === 'minus') {
         counterIndex = counterIndex - 1;
-        counterIndexChange(counterIndex);
+        counterIndex = counterIndexChange(counterIndex);
         countValueChange(counterIndex, button);
     } else if (button.dataset.count === 'plus') {
         counterIndex = counterIndex + 1;
@@ -21,8 +23,9 @@ function checkCount(button) {
 
 function counterIndexChange(index) {
     if (index < 0) {
-        counterIndex = 0;
-        return counterIndex;
+        return 0;
+    } else {
+        return index;
     }
 }
 
@@ -36,11 +39,10 @@ function countValueChange(value, button) {
     return value;
 }
 
-function counterTextCheck(el) {
-    if (!el.value.match(/^\d+$/)) {
-        el.value = counterIndex;
-        el.text = el.value;
-    } else {
-        counterIndex = parseInt(el.value);
+function counterTextCheck(event) {
+
+    if (!event.target.value.match(/^\d+$/)) {
+        event.target.value = 0;
+        event.target.text = 0;
     }
 }
