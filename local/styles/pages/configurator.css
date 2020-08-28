@@ -4901,7 +4901,9 @@ h1, .h1 {
 h2, .h2 {
   font-size: 24px;
   font-weight: 600;
-  color: #1C1C1C; }
+  color: #1C1C1C;
+  margin-top: 0;
+  margin-bottom: 20px; }
 
 h3, .h3 {
   font-size: 16px;
@@ -4920,7 +4922,7 @@ ul {
 
 p {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   line-height: 130%; }
 
 a {
@@ -5114,6 +5116,18 @@ label {
     color: #215294;
     margin-right: 7px;
     transition: 0.2s ease-in-out; }
+
+.input-border {
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 10px;
+  min-height: 40px;
+  color: #1C1C1C;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%; }
+  .input-border::placeholder {
+    color: #8F8F8F; }
 
 input::placeholder {
   color: #8F8F8F; }
