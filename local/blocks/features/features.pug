@@ -1,11 +1,11 @@
-.features(data-popup-modal="detailed-features").modal.modal_right.modal_hidden
-    .features__content.modal__content
-        a.features__action-link.modal__close-link(href="#" title = "заголовок H1")
+.features(data-popup-modal="detailed-features").modal-detailed.modal.modal_right.modal_hidden
+    .features__content.modal__content.modal-detailed__content
+        a.features__action-link.modal-detailed__action-link.modal__close-link(href="#" title = "заголовок H1")
             .icon.icon_fill
                 svg.icon__svg
                     use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
-        .features__main
-            .h2.features__title Характеристики
+        .features__main.modal-detailed__main
+            .h2.features__title.modal-detailed__title Характеристики
             .features__item
                 .features__item-title Процессоры
                 ul.features__list
