@@ -10,10 +10,6 @@ function inputViewCheck (event) {
     let configurator = input.closest('.configurator');
     let configuratorItems = configurator.querySelector('.configurator__items');
 
-    console.log(isChecked)
-    console.log(input.value)
-    console.log(configuratorItems.classList.contains('configurator__items_one-col'))
-
     if (isChecked && input.value == 'column' && configuratorItems.classList.contains('configurator__items_one-col')) {
         return false;
     } else {

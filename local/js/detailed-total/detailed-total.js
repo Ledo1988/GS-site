@@ -1,7 +1,6 @@
 const detailedTotal = document.querySelectorAll('.catalog-detailed__total-item');
 
-window.onload = function(e){
-    console.log(document.querySelector('.catalog-detailed__total'))
+window.onload = function(){
     if (document.querySelector('.catalog-detailed__total')) {
         detailedTotal.forEach(item => {
             const percent = item.querySelector('.catalog-detailed__total-percent').dataset.percent;
