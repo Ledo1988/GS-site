@@ -18,19 +18,31 @@
 		
 		.drop-down__choice
 			left: -15px
-			top: -11px
 			margin-right: 10px
 			border: 1px solid $color-primary
 			box-sizing: border-box
-			border-radius: 100px
+			border-radius: 10px
+			top: auto
+			bottom: -11px
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			z-index: 5
+			min-width: 50px
 		
 		.drop-down__result
+			order: 2
 			padding: 3px 10px
 			
+		.drop-down__list
+			transition: none
+			display: flex
+			flex-direction: column-reverse
+	
 	&-hint
 		margin-top: 0
 		margin-left: 0
 		margin-right: 5px
 		
 	&-drop-down ~ .catalog-detailed__option-title
-		margin-left: 36px
+		margin-left: 45px

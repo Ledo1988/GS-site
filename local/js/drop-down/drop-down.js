@@ -1,9 +1,9 @@
 //get elements
-const dropdownTitle = document.querySelector('.drop-down__result');
+const dropdownTitle = document.querySelectorAll('.drop-down__result');
 const dropdownOptions = document.querySelectorAll('.drop-down__option');
 
 //bind listeners to these elements
-dropdownTitle.addEventListener('click', toggleDropDownMenuDisplay);
+dropdownTitle.forEach(item => item.addEventListener('click', toggleDropDownMenuDisplay));
 dropdownOptions.forEach(option => option.addEventListener('click', handleDropDownOptionSelected));
 
 function toggleDropDownClass(elem,className){
@@ -30,15 +30,16 @@ function handleDropDownOptionSelected(e){
     toggleDropDownClass(e.target.parentNode, 'drop-down__list_hide');
 
     const newValue = e.target.textContent + ' ';
-    const titleElem = document.querySelector('.drop-down__result');
-    const icon = document.querySelector('.drop-down__result-icon');
+    const dropdown = e.target.closest('.drop-down');
+    const titleElem = dropdown.querySelector('.drop-down__result');
+    const icon = dropdown.querySelector('.drop-down__result-icon');
 
 
     titleElem.textContent = newValue;
     titleElem.appendChild(icon);
 
     //trigger custom event
-    document.querySelector('.drop-down__result').dispatchEvent(new Event('change'));
+    dropdown.querySelector('.drop-down__result').dispatchEvent(new Event('change'));
     //setTimeout is used so transition is properly shown
     setTimeout(() => toggleDropDownClass(icon,'drop-down__result-icon_rotate',0));
 }
