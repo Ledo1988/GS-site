@@ -1,5 +1,4 @@
 const fileUploader = document.querySelectorAll('.file-uploader')
-console.log(fileUploader)
 fileUploader.forEach(item => {item.addEventListener('click', () => { fileUploaderHandle(item)})})
 
 function fileUploaderHandle(item) {
