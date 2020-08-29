@@ -1,0 +1,28 @@
+@import "__details/catalog-detailed-simple__details"
+@import "__overview/catalog-detailed-simple__overview"
+@import "__simple-config/catalog-detailed__simple-config"
+@import "__slider/catalog-detailed__slider"
+@import "__items/catalog-detailed-simple__items"
+
+
+
+
+@import "__config/catalog-detailed__config"
+@import "__title/catalog-detailed__title"
+
+@import "../slider/slider"
+@import "../rate/rate"
+@import "../delivery/delivery"
+@import "../features/features"
+@import "../modal/modal"
+@import "../documents/documents"
+@import "../cheaper/cheaper"
+@import "../config-users/config-users"
+
+
+.catalog-detailed
+	@include container
+	display: grid
+	grid-template-columns: 750px auto
+	grid-column-gap: $grid-unit*10
+	
