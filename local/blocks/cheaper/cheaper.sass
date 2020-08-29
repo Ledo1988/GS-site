@@ -5,10 +5,20 @@
 @import "__submit/cheaper__submit"
 @import "__form-comment/cheaper__form-comment"
 @import "__form-link/cheaper__form-link"
+@import "__label/cheaper__label"
+@import "__input-desc/cheaper__input-desc"
 
 @import "../file-uploader/file-uploader"
 @import "../modal-detailed/modal-detailed"
+@import "../submit-success/submit-success"
 
 .cheaper
 	height: 100vh
 	overflow: hidden!important
+
+	.modal__open-link
+		pointer-events: none
+		cursor: none
+		opacity: 0
+		width: 0
+		height: 0

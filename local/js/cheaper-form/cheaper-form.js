@@ -9,21 +9,22 @@ function cheaperFormInputsValid(event) {
     let label = input.closest('.cheaper__label');
     let inputPattern = inputPatternCheck(input);
 
-   if (inputPattern) {
-       input.classList.add('input__correct')
-       label.classList.add('label__correct')
-       if (input.classList.contains('input__error')) {
-           input.classList.remove('input__error')
-           label.classList.remove('label__error')
+   if (inputPattern && input.value !== "") {
+       input.classList.add('cheaper__input_correct')
+       label.classList.add('cheaper__label_correct')
+
+       if (input.classList.contains('cheaper__input_error')) {
+           input.classList.remove('cheaper__input_error')
+           label.classList.remove('cheaper__label_error')
        }
 
    } else {
-       input.classList.add('input__error')
-       label.classList.add('label__error')
+       input.classList.add('cheaper__input_error')
+       label.classList.add('cheaper__label_error')
 
-       if (input.classList.contains('input__correct')) {
-           input.classList.remove('input__correct')
-           label.classList.remove('label__correct')
+       if (input.classList.contains('cheaper__input_correct')) {
+           input.classList.remove('cheaper__input_correct')
+           label.classList.remove('cheaper__label_correct')
        }
    }
 
@@ -43,14 +44,32 @@ function inputPatternCheck(input) {
 }
 
 function submitUnable() {
-    let inputsArr = Array.from(cheaperFormInputs)
-    let inputsArrError = inputsArr.map(item => item.classList.contains('input__error'))
+    const inputsArr = Array.from(cheaperFormInputs)
+    const inputsArrError = inputsArr.filter(item => item.classList.contains('cheaper__input_error'))
+    const inputsArrCorrect = inputsArr.filter(item => item.classList.contains('cheaper__input_correct'))
 
-    if (inputsArrError.length > 0
-        && cheaperFormSubmit.classList.contains('submit__correct')
-        && cheaperFormInputs.length === inputsArr.length) {
-        cheaperFormSubmit.classList.remove('submit__correct')
-    } else {
-        cheaperFormSubmit.classList.add('submit__correct')
+    if (inputsArrError.length > 0 && cheaperFormSubmit.classList.contains('cheaper__submit_correct')) {
+        cheaperFormSubmit.classList.remove('cheaper__submit_correct')
+    } else if (cheaperFormInputs.length === inputsArrCorrect.length) {
+        cheaperFormSubmit.classList.add('cheaper__submit_correct')
     }
 }
+
+//AJAX request
+$(cheaperForm).submit(function(event) {
+    /* stop form from submitting normally */
+    event.preventDefault();
+
+    $.ajax({
+        url: "catalog-detailed.html",
+        context: document.body,
+        success: function () {
+            let mainBox = cheaperForm.closest('.cheaper');
+            let closeLink = mainBox.querySelector('.modal__close-link');
+            let openLink = mainBox.querySelector('.modal__open-link');
+
+            closeLink.click();
+            openLink.click();
+        }
+    });
+});

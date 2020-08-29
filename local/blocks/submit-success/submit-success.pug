@@ -1,0 +1,12 @@
+.submit-success(data-popup-modal="detailed-submit-success").modal-detailed.modal.modal_right.modal_hidden
+    .submit-success__content.modal__content.modal-detailed__content
+        a.submit-success__action-link.modal-detailed__action-link.modal__close-link(href="#" title = "заголовок H1")
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
+        .submit-success__main.modal-detailed__main
+            img(src="local/img/ico_form-success.png" class="submit-success__img")
+            .h2.submit-success__title.modal-detailed__title Ваши данные успешно отправлены!
+            p.submit-success-text Наши специалисты свяжутся с вами в ближайшее время
+                |и помогут с предоставлением персональной скидки
+            button.submit-success__btn.button.button_blue.modal__close-link(type="button") Вернуться на сайт

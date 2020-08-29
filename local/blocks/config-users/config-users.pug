@@ -1,0 +1,21 @@
+.config-users(data-popup-modal="detailed-config-users").modal-detailed.modal.modal_right.modal_hidden
+    .config-users__content.modal__content.modal-detailed__content
+        a.config-users__action-link.modal-detailed__action-link.modal__close-link(href="#" title = "заголовок H1")
+            .icon.icon_fill
+                svg.icon__svg
+                    use(xlink:href="/local/img/icons/sprite.svg#ico_cross")
+        .config-users__main.modal-detailed__main
+            .h2.config-users__title.modal-detailed__title Количество пользователей
+            ul.config-users__list
+                li.config-users__item
+                    input.config-users__input(type="radio" id="input1" name="usersConfig" value="1-10" checked="checked")
+                    label.config-users__label(for="input1") 1-10
+                li.config-users__item
+                    input.config-users__input(type="radio" id="input2" name="usersConfig" value="10-50")
+                    label.config-users__label(for="input2") 10-50
+                li.config-users__item
+                    input.config-users__input(type="radio" id="input3" name="usersConfig" value="50-100")
+                    label.config-users__label(for="input3") 50-100
+                li.config-users__item
+                    input.config-users__input(type="radio" id="input4" name="usersConfig" value="100<")
+                    label.config-users__label(for="input4") 100<
