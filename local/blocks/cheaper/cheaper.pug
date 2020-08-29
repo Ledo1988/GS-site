@@ -16,8 +16,12 @@
             p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
             p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
             form.cheaper__form(name="cheaper__form" action="POST")
-                input.cheaper__input.input-border(type="text" placeholder="Ваше имя")
-                input.cheaper__input.input-border(type="tel" placeholder="Ваш телефон")
+                label.cheaper__label
+                    input.cheaper__input.input-border(type="text" placeholder="Ваше имя")
+                    span.cheaper__input-desc Формат ввода: русские или латинские буквы
+                label.cheaper__label
+                    input.cheaper__input.input-border(type="tel" placeholder="Ваш телефон")
+                    span.cheaper__input-desc Формат ввода: +7 (999)-999-99-99
                 include ../file-uploader/file-uploader
                 button.button.button_grey.cheaper__submit(type="submit") Отправить
                 p.cheaper__form-comment Нажимая кнопку «Отправить», Вы соглашаетесь

@@ -1,2 +1,6 @@
-VMasker(document.querySelector("input[type='tel']")).maskPattern("+9 (999) 999-99-99");
+let element = document.querySelector("input[type='tel']");
+let maskOptions = {
+    mask: '+{7}(000)-000-00-00'
+};
+let mask = IMask(element, maskOptions);
 
