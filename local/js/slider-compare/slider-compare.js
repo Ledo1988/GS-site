@@ -97,9 +97,8 @@ function compareRemove(event) {
         let array = item.querySelectorAll('.swiper-slide');
         array = Array.from(array);
         console.log(array)
-
+        array[currentIndex].remove();
         array.splice(currentIndex, 1);
-        array.find(item => item.index === currentIndex ? item.remove() :false)
         console.log(array)
     }
 
