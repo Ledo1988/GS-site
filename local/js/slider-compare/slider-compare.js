@@ -61,11 +61,11 @@ sliderCompareMemory.controller.control = sliderCompareConnectors;
 
 //Open/close for features START
 
-const feturesOpen = document.querySelector('.compare__features-open');
+const featuresOpen = document.querySelector('.compare__features-open');
 
-feturesOpen.addEventListener('click', (event) => feturesToggle(event));
+featuresOpen.addEventListener('click', (event) => featuresToggle(event));
 
-function feturesToggle(event) {
+function featuresToggle(event) {
     const link = event.target.closest('.compare__features-open');
     const features = document.querySelector('.compare__sliders');
 
@@ -76,7 +76,34 @@ function feturesToggle(event) {
 //Open/close for features END
 
 //Remove from compare START
+const compareClose = document.querySelectorAll('.compare__close-link');
+const compareSliderMain = document.querySelector('.slider-compare_main');
+const compareSlidersAll = document.querySelectorAll('.slider-compare');
 
+compareClose.forEach(item => item.addEventListener('click', (event) => compareRemove(event)))
+
+function compareRemove(event) {
+    const currentSlide = event.target.closest('.swiper-slide');
+    const compareSlidsMain = compareSliderMain.querySelectorAll('.swiper-slide')
+    const compareSlidsMainArr = Array.from(compareSlidsMain);
+    let compareSlidersAllArr = Array.from(compareSlidersAll);
+    currentSlide.classList.add('current');
+
+    const currentIndex = compareSlidsMainArr.findIndex(item => item.classList.contains('current'));
+
+    compareSlidersAllArr.forEach(item => {removeItem(item)});
+
+    function removeItem  (item) {
+        let array = item.querySelectorAll('.swiper-slide');
+        array = Array.from(array);
+        console.log(array)
+
+        array.splice(currentIndex, 1);
+        array.find(item => item.index === currentIndex ? item.remove() :false)
+        console.log(array)
+    }
+
+}
 
 
 
