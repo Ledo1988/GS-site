@@ -2,3 +2,38 @@
 @import "__button/slider-compare__button"
 
 .slider-compare
+	padding-top: $grid-unit*4
+	padding-bottom: $grid-unit*3
+	position: relative
+	
+	&:before
+		content: ''
+		height: 100%
+		position: absolute
+		top: 0
+		left: calc((100vw - 1420px)/-2)
+		width: 100vw
+		border-top: 1px solid #FAFAFA
+		
+		@media (max-width: $xl)
+			left: calc((100vw - 1220px)/-2)
+		
+	
+	&:nth-of-type(even)
+		&:before
+			background-color: #FAFAFA
+	
+	&:nth-of-type(odd)
+		&:before
+			background-color: $color-white
+		
+	&:last-of-type
+		&:before
+			border-bottom: 1px solid #FAFAFA
+		
+	&_main
+		padding: 0
+		
+		&:before
+			display: none
+	
