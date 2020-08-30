@@ -5058,7 +5058,8 @@ label {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; }
+    user-select: none;
+    background-color: #EFF0F4; }
   .input-choice:hover .input-choice__label, .input-choice:focus .input-choice__label {
     background-color: #EFF0F4; }
   .input-choice__input {
@@ -5068,7 +5069,8 @@ label {
     height: 0;
     width: 0; }
     .input-choice__input:checked ~ .input-choice__label {
-      padding: 12px 14px; }
+      padding: 12px 14px;
+      background-color: #ffffff; }
       .input-choice__input:checked ~ .input-choice__label .input-choice__checkmark {
         margin-right: 3px;
         width: auto;
